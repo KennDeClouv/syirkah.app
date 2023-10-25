@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? Font Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? Font Awesome PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Syirkah.App</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm bg-light fixed-top" style="height: 10vh;">
+        <div class="container-xl px-4">
+            <a class="navbar-brand bg-primary text-secondary px-2 py-0" href="#home"> Syirkah.App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end w-50" id="offcanvasRight">
+                <div class="offcanvas-header p-4">
+                    <a class="navbar-brand bg-primary text-secondary px-2 py-0" href="#home"> Syirkah.App</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="link ms-lg-auto m-md-4 m-sm-4 m-4 text-end">
+                    <ul class="n navbar-nav gap-md-3 gap-sm-3 gap-3 z-3">
+                        <li class="nav-item align-items-center " style="color: var(--dark);">
+                            <a class="nav-link" href="#beranda" style="color: var(--dark);">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang" style="color: var(--dark);">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#layanan" style="color: var(--dark);">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq" style="color: var(--dark);">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hubungikami" style="color: var(--dark);">Hubungi Kami</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="btn btn-primary px-4 py-2">
+                                    Login
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- HERO BANNER -->
+    <header>
+        <div class="container-xl vh-100 d-flex p-2">
+            <div class="hero-banner-title m-auto w-100 h-75 rounded-5 align-items-center d-flex flex-lg-column"
+                style="background-color: var(--gray);">
+                <div class="row d-flex h-100 px-5 ">
+                    <div class="col-xl-7 flex-column align-items-center d-flex justify-content-center">
+                        <h1 class="align-items-center">Solusi Praktis <span
+                                style="color: var(--gold);">Syirkah</span><br>Untuk Semua Kalangan <span
+                                style="color: var(--gold);">Pengusaha</span></h1>
+                        <p class="fs-5"><i>“Tidak boleh berjual-beli di pasar kami, <strong
+                                    style="color: var(--basic);">kecuali orang yang paham fikih
+                                    (dalam jual-beli)</strong></i>” - HR. At Tirmidzi</p>
+                    </div>
+                    <div class="col-xl-5">
+                        <img class="w-100 h-100"
+                            src="https://s3-alpha-sig.figma.com/img/6055/b552/a149336d04da679e9ca53bf9a9ed414f?Expires=1699228800&Signature=QTdz1WPz1QAGV6ubLnBuqjxsoCRRUGIl9oL9Tlxz8-Bw1aauo~XiB~P9Nk2DmG5ZynC9V1qoPbjTPCOTYJ7XPlEEQnFFECikkih9BH~iHFr70AVphTVyXKXoS8srrG4jBaNAmRnOvSfA2IBGEAOZHX2dUMoLm2Xlezt45emtSkQepZZB1ug3vwyuhqWLJ8X-Z0yA7BUeL3-Md3WNH0avqrsrWayKJ6K-ezluoStxqfZOUZVIuuykTy-TJNN2-aiBEKmfBuvJoQMqkN6llEcEXbI9CwuNcbaWiFwydRWg-WCgO7sCikA1NlT1Y~vqvBABJbZH-ZSgwrrSGBNzz0lWhA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            alt="">
+                    </div>
+                </div>
+                <a href="#" class="m-auto">
+                    <div class="btn btn-down pt-5 pb-3 rounded-pill px-3 position-relative ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 3.33782C19.989 5.06687 22 8.29859 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 8.29859 4.01099 5.06687 7 3.33782M8 12L12 16M12 16L16 12M12 16V2"
+                                stroke="#D9B600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- HERO BANNER END-->
+    <!-- TENTANG -->
+    <section>
+        <div class="container-xl">
+            <p class="fs-4 text-center " style="letter-spacing: 3px;font-weight: 400;">
+                MEMULAI SYIRKAH ITU MUDAH
+            </p>
+            <p class="fs-3 text-center" style="font-style: normal;
+            font-weight: 500;line-height: 130.5%">
+                Syirkah App menjadi asisten bisnis anda agar tetap berkah
+            </p>
+            <div class="world mt-5 pt-5">
+                <img class="w-100"
+                    src="https://s3-alpha-sig.figma.com/img/65c6/051c/405182a6729142912bd92d0728688f17?Expires=1699228800&Signature=EfJpTytYXDrQMZgdh5jAXDf4p-6jk7Msb~qKtxxLQhyXb68eJkolIeAZOwDmQLTDw6-YQxUSWWkjsyzqAd4FmfK7eBHSpqe7MnkTUTxS71lqBFQ9lYIhPAjBpiSBiI4SL~XVU0mnqrsbk9yLRFoa0bqjY54Zjoo8e1eFDZCntLHM2KUCT1mdF2jo83q6ZdFI6DIXAdxxaiALznBfFWCUyBxUPCoz3IKMP-~hFxBUCDIp77yXrEABfqsHBMtX2kXcbnNu3Zc-KtQrCO2yX5H26NWTEbEHf5pU-dv-rgBsLpwTZ~-IM8rNYo5zML8cY8OHQMg17~7VI2o0vfKkmro47w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="">
+                <div class="world-des fs-5 position-relative ">
+                    Syirkah App adalah sebuah aplikasi untuk membantu anda dalam mengelola usaha syirkah anda lebih
+                    praktis, lebih mudah dan lebih berkah, mulai dari membuat usaha syirkah, membuat kontrak akad
+                    syirkah dan ketenagakerjaan hingga laporan keuangan semua aktifitas administrasi usaha syirkah anda
+                    dimudahkan dengan berbagai fitur sesuai kebutuhan. Dilengkapi dengan layanan konsultasi dan
+                    mentoring syirkah berkala oleh pakar di bidangnya. Kini tidak perlu takut lagi untuk bersyirkah
+                    sesama pengusaha muslim dengan bantuan Syirkah App.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TENTANG END-->
+    <!-- BOOTSTRAP JS -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
