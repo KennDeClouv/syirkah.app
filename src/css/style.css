@@ -1,0 +1,131 @@
+* {
+	font-family: "poppins", sans-serif;
+}
+/* ===== ROOT SETTINGS ===== */
+:root {
+	--gold: #d9b600;
+	--dark: #242424;
+	--basic: #390000;
+	--white: #ffffff;
+	--gray: #f8f8f8;
+	--basic-hover: #5a0707;
+	--transition: all 0.4s ease;
+}
+
+/* ===== NAVBAR =====*/
+.nav-link:hover {
+	color: var(--basic) !important;
+	opacity: 0.75;
+}
+.nav-link::after {
+	content: "";
+	display: block;
+	border: var(--basic) 1px solid;
+	border-radius: 10px;
+	width: 80%;
+	opacity: 0;
+	transition: var(--transition);
+	margin: auto;
+	margin-top: 0.1em;
+	transform: scaleX(0);
+}
+.nav-link:hover::after {
+	transform: scaleX(1);
+	opacity: 1;
+}
+.navbar-brand {
+	font-family: "Times New Roman", Times, serif;
+	background-color: var(--basic);
+	color: var(--gold);
+}
+.navbar-brand:hover {
+	color: var(--gold);
+}
+.login-button {
+	background-color: var(--basic);
+	color: var(--gray);
+}
+.login-button:hover {
+	background: var(--basic-hover);
+	color: var(--gray);
+}
+.login-button:active {
+	background: var(--basic-hover);
+	color: var(--gray);
+}
+
+/* ===== HERO BANNER ===== */
+.hero-banner-title {
+	/* background-color: var(--gray); */
+	/* min-height: 75vh; */
+}
+.banner-img {
+	width: 90%;
+}
+.btn-down {
+	background-color: var(--white);
+	bottom: 45px;
+	position: absolute;
+	z-index: 1;
+	padding: 50px 15px 10px 15px;
+}
+.btn-down:hover {
+	background-color: #fff7ce;
+}
+.btn-down:active {
+	background-color: #fff7ce;
+}
+.btn-down-back {
+	display: block;
+	background-color: var(--gold);
+	bottom: 125.5px;
+	position: absolute;
+	z-index: 1;
+	padding: 30px 20px;
+	left: -5px;
+}
+.banner-inner {
+	background-color: var(--gray);
+}
+/* ===== TENTANG ===== */
+.world-des {
+	border-radius: 30px;
+	border: 1px solid var(--gray);
+	background: var(#ffffffcb);
+	backdrop-filter: blur(2px);
+	padding: 20px 30px;
+	bottom: 25vh;
+}
+
+.img-ust-dwi {
+	/* width: 100%; */
+}
+
+.testimoni{
+	bottom: 100px;
+}
+.testimoni-box{
+	background-color: var(--gray);
+	cursor: grab;
+}
+.testimoni-box img{
+	width: 75px;
+}
+.testimoni-box p{
+	font-size: .8rem;
+}
+
+
+/* RESPONSIVE SETTINGS*/
+@media screen and (max-width: 992px) {
+	.nav-link {
+		display: inline-block;
+	}
+	.nav-link::after {
+		margin-right: 0;
+		transform-origin: right;
+	}
+	.banner-inner {
+		min-height: 70vh;
+	}
+}

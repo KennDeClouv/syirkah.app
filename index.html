@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--? Font Poppins & Inter -->
+    <!--? FONT AWESOME PRO MAX-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!--? Font Awesome PRO MAX-->
+    <!--? FONT AWESOME PRO MAX-->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
@@ -20,28 +20,29 @@
         href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         type="image/x-icon">
     <!-- ? SWIPER.JS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/swiper.css" />
     <!--? AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--? BOOTSTRAP 5 CSS -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--? STYLE -->
-    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Syirkah.App</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm bg-light fixed-top" style="height: 10vh;">
-        <div class="container-xl px-4">
-            <a class="navbar-brand bg-primary text-secondary px-2 py-0" href="#home"> Syirkah.App</a>
+        <div class="container-lg px-4">
+            <a class="navbar-brand px-2 py-0" href="#"> Syirkah.App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end w-50" id="offcanvasRight">
                 <div class="offcanvas-header p-4">
-                    <a class="navbar-brand bg-primary text-secondary px-2 py-0" href="#home"> Syirkah.App</a>
+                    <a class="navbar-brand px-2 py-0" href="#"> Syirkah.App</a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="link ms-lg-auto m-md-4 m-sm-4 m-4 text-end">
@@ -63,7 +64,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <div class="btn btn-primary px-4 py-2">
+                                <div class="login-button btn btn-dark px-4 py-2">
                                     Login
                                 </div>
                             </a>
@@ -76,26 +77,32 @@
     <!-- NAVBAR END -->
     <!-- HERO BANNER -->
     <header>
-        <div class="container-xl vh-100 d-flex p-2">
-            <div class="hero-banner-title m-auto w-100 h-75 rounded-5 align-items-center d-flex flex-lg-column"
-                style="background-color: var(--gray);">
-                <div class="row d-flex h-100 px-5 ">
-                    <div class="col-xl-7 flex-column align-items-center d-flex justify-content-center">
-                        <h1 class="align-items-center">Solusi Praktis <span
-                                style="color: var(--gold);">Syirkah</span><br>Untuk Semua Kalangan <span
-                                style="color: var(--gold);">Pengusaha</span></h1>
+        <div class="container-lg vh-100 d-flex p-2">
+            <div class="hero-banner-title m-auto  align-items-center d-flex flex-lg-column mx-3 pt-lg-4">
+                <div class="banner-inner row d-flex h-100 px-lg-5 px-0 rounded-5 mt-lg-5">
+                    <div class="col flex-column align-items-center d-flex justify-content-center">
+                        <h1 class="me-auto">Solusi Praktis <span style="color: var(--gold);">Syirkah</span><br>Untuk
+                            Semua Kalangan <span style="color: var(--gold);">Pengusaha</span></h1>
                         <p class="fs-5"><i>“Tidak boleh berjual-beli di pasar kami, <strong
                                     style="color: var(--basic);">kecuali orang yang paham fikih
                                     (dalam jual-beli)</strong></i>” - HR. At Tirmidzi</p>
                     </div>
-                    <div class="col-xl-5">
-                        <img class="w-100 h-100"
+                    <div class="col d-none d-lg-block">
+                        <img class="banner-img ms-5"
                             src="https://s3-alpha-sig.figma.com/img/6055/b552/a149336d04da679e9ca53bf9a9ed414f?Expires=1699228800&Signature=QTdz1WPz1QAGV6ubLnBuqjxsoCRRUGIl9oL9Tlxz8-Bw1aauo~XiB~P9Nk2DmG5ZynC9V1qoPbjTPCOTYJ7XPlEEQnFFECikkih9BH~iHFr70AVphTVyXKXoS8srrG4jBaNAmRnOvSfA2IBGEAOZHX2dUMoLm2Xlezt45emtSkQepZZB1ug3vwyuhqWLJ8X-Z0yA7BUeL3-Md3WNH0avqrsrWayKJ6K-ezluoStxqfZOUZVIuuykTy-TJNN2-aiBEKmfBuvJoQMqkN6llEcEXbI9CwuNcbaWiFwydRWg-WCgO7sCikA1NlT1Y~vqvBABJbZH-ZSgwrrSGBNzz0lWhA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                             alt="">
                     </div>
                 </div>
-                <a href="#" class="m-auto">
-                    <div class="btn btn-down pt-5 pb-3 rounded-pill px-3 position-relative ">
+
+                <a href="#tentang" class="m-auto d-none d-lg-block">
+                    <div class="btn btn-down rounded-pill position-relative ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 3.33782C19.989 5.06687 22 8.29859 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 8.29859 4.01099 5.06687 7 3.33782M8 12L12 16M12 16L16 12M12 16V2"
+                                stroke="#D9B600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="btn btn-down-back rounded-pill position-relative z-n1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M17 3.33782C19.989 5.06687 22 8.29859 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 8.29859 4.01099 5.06687 7 3.33782M8 12L12 16M12 16L16 12M12 16V2"
@@ -103,39 +110,224 @@
                         </svg>
                     </div>
                 </a>
+
             </div>
         </div>
     </header>
     <!-- HERO BANNER END-->
     <!-- TENTANG -->
-    <section>
-        <div class="container-xl">
-            <p class="fs-4 text-center " style="letter-spacing: 3px;font-weight: 400;">
-                MEMULAI SYIRKAH ITU MUDAH
-            </p>
-            <p class="fs-3 text-center" style="font-style: normal;
-            font-weight: 500;line-height: 130.5%">
-                Syirkah App menjadi asisten bisnis anda agar tetap berkah
-            </p>
-            <div class="world mt-5 pt-5">
-                <img class="w-100"
-                    src="https://s3-alpha-sig.figma.com/img/65c6/051c/405182a6729142912bd92d0728688f17?Expires=1699228800&Signature=EfJpTytYXDrQMZgdh5jAXDf4p-6jk7Msb~qKtxxLQhyXb68eJkolIeAZOwDmQLTDw6-YQxUSWWkjsyzqAd4FmfK7eBHSpqe7MnkTUTxS71lqBFQ9lYIhPAjBpiSBiI4SL~XVU0mnqrsbk9yLRFoa0bqjY54Zjoo8e1eFDZCntLHM2KUCT1mdF2jo83q6ZdFI6DIXAdxxaiALznBfFWCUyBxUPCoz3IKMP-~hFxBUCDIp77yXrEABfqsHBMtX2kXcbnNu3Zc-KtQrCO2yX5H26NWTEbEHf5pU-dv-rgBsLpwTZ~-IM8rNYo5zML8cY8OHQMg17~7VI2o0vfKkmro47w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt="">
-                <div class="world-des fs-5 position-relative ">
-                    Syirkah App adalah sebuah aplikasi untuk membantu anda dalam mengelola usaha syirkah anda lebih
-                    praktis, lebih mudah dan lebih berkah, mulai dari membuat usaha syirkah, membuat kontrak akad
-                    syirkah dan ketenagakerjaan hingga laporan keuangan semua aktifitas administrasi usaha syirkah anda
-                    dimudahkan dengan berbagai fitur sesuai kebutuhan. Dilengkapi dengan layanan konsultasi dan
-                    mentoring syirkah berkala oleh pakar di bidangnya. Kini tidak perlu takut lagi untuk bersyirkah
-                    sesama pengusaha muslim dengan bantuan Syirkah App.
+    <section id="tentang">
+        <div class="container-fluid">
+            <div class="container-lg">
+
+                <p class="fs-4 text-center " style="letter-spacing: 3px;font-weight: 400;">
+                    MEMULAI SYIRKAH ITU MUDAH
+                </p>
+                <p class="fs-3 text-center" style="font-style: normal;
+                font-weight: 500;line-height: 130.5%">
+                    Syirkah App menjadi asisten bisnis anda agar tetap berkah
+                </p>
+                <div class="world mt-5 pt-5">
+                    <img class="w-100"
+                        src="https://s3-alpha-sig.figma.com/img/65c6/051c/405182a6729142912bd92d0728688f17?Expires=1699228800&Signature=EfJpTytYXDrQMZgdh5jAXDf4p-6jk7Msb~qKtxxLQhyXb68eJkolIeAZOwDmQLTDw6-YQxUSWWkjsyzqAd4FmfK7eBHSpqe7MnkTUTxS71lqBFQ9lYIhPAjBpiSBiI4SL~XVU0mnqrsbk9yLRFoa0bqjY54Zjoo8e1eFDZCntLHM2KUCT1mdF2jo83q6ZdFI6DIXAdxxaiALznBfFWCUyBxUPCoz3IKMP-~hFxBUCDIp77yXrEABfqsHBMtX2kXcbnNu3Zc-KtQrCO2yX5H26NWTEbEHf5pU-dv-rgBsLpwTZ~-IM8rNYo5zML8cY8OHQMg17~7VI2o0vfKkmro47w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="">
+                    <div class="world-des fs-6 position-relative">
+                        <strong><i> Syirkah App </i></strong>adalah sebuah aplikasi untuk membantu anda dalam mengelola
+                        usaha syirkah anda lebih
+                        praktis, lebih mudah dan lebih berkah, mulai dari membuat usaha syirkah, membuat kontrak akad
+                        syirkah dan ketenagakerjaan hingga laporan keuangan semua aktifitas administrasi usaha syirkah
+                        anda
+                        dimudahkan dengan berbagai fitur sesuai kebutuhan. Dilengkapi dengan layanan konsultasi dan
+                        mentoring syirkah berkala oleh pakar di bidangnya. Kini tidak perlu takut lagi untuk bersyirkah
+                        sesama pengusaha muslim dengan bantuan Syirkah App.
+                    </div>
                 </div>
             </div>
+            <!-- TERKONEKSI BERSAMA UST -->
+            <div class="row">
+                <div class="col-lg-6 col-12 p-lg-0 pe-lg-4 px-md-5">
+                    <img src="https://s3-alpha-sig.figma.com/img/a8b3/335a/332614408b817b625be821da74d46cb5?Expires=1699228800&Signature=DOS-q9wh1J7CVtuBaFv9aXy68f3JsqW~l1TJLwnmUnP7WmphtKBEr50NqHlPz27pITtXI73oqjiLI2KfJYKCbYr~l4Al-Y8Gt8agJ6HxG0xDHLSQssj6ThoNTDm6X3cFP3Th9QhIUTgMs3z5PiNbMoXekS5HdDycJ2qolBdWXpZJ65ZqgE5E2sRxcWGaaQ3FeLviisqptMON8FKRIFb4GaDq~Q0HWiID63SoTSRA8QnIppM~EAuppDbXV8OK8fslP9KBgvD1ZlsIDqr90dOMWyuKyDbq4Lg-1RCQ-wi3uOSXqnFesLnr1c1H8YggyWGFUWbeLOlIFE5OPNSbGw7~Iw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        class="img-ust-dwi w-100" alt="">
+                    <div class="testimoni position-relative">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mb-3">
+                                    <div class="testimoni-box rounded-5 m-4 p-4 "
+                                        style="box-shadow: 0px 4px 4px 0px #00000040;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                    class="d-flex m-auto" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki
+                                                    guidance, sekarang semua panduan sekaligus cara praktis dan taktis
+                                                    sudah ada di syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                                <h5 class="fs-6" style="color: var(--basic);">- Transbara Al-Fatih</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimoni-box rounded-5 m-4 p-4"
+                                        style="box-shadow: 0px 4px 4px 0px #00000040;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                    class="d-flex m-auto" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki
+                                                    guidance, sekarang semua panduan sekaligus cara praktis dan taktis
+                                                    sudah ada di syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                                <h5 class="fs-6" style="color: var(--basic);">- Transbara Al-Fatih</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimoni-box rounded-5 m-4 p-4"
+                                        style="box-shadow: 0px 4px 4px 0px #00000040;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                    class="d-flex m-auto" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki
+                                                    guidance, sekarang semua panduan sekaligus cara praktis dan taktis
+                                                    sudah ada di syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                                <h5 class="fs-6" style="color: var(--basic);">- Transbara Al-Fatih</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimoni-box rounded-5 m-4 p-4"
+                                        style="box-shadow: 0px 4px 4px 0px #00000040;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                    class="d-flex m-auto" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki
+                                                    guidance, sekarang semua panduan sekaligus cara praktis dan taktis
+                                                    sudah ada di syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                                <h5 class="fs-6" style="color: var(--basic);">- Transbara Al-Fatih</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimoni-box rounded-5 m-4 p-4"
+                                        style="box-shadow: 0px 4px 4px 0px #00000040;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                    class="d-flex m-auto" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki
+                                                    guidance, sekarang semua panduan sekaligus cara praktis dan taktis
+                                                    sudah ada di syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                                <h5 class="fs-6" style="color: var(--basic);">- Transbara Al-Fatih</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination text-end pe-4" style="--swiper-theme-color: var(--gold);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 p-lg-0 ps-lg-5 p-4">
+                    <div>
+                        <p class="fs-4" style="letter-spacing:4.8px ;">Terkoneksi Bersama</p>
+                        <h3 class="fs-3" style="color: var(--basic);"><b>Ust.Dwi Condro Triono, Ph.D.</b></h3>
+                        <h4 style="font-weight: 600;">Gurunya Pengusaha Muslim, <br>
+                            Menjaga amanah 1000+ Brand Ternama.</h4>
+                        <hr style="width: 56px; border: var(--basic) 3px solid ; border-radius: 20px; opacity: 1;">
+                    </div>
+                    <div class="row mt-5 ">
+                        <div class="col-2 w-auto">
+                            <div class="d-flex align-items-center rounded-pill" style="background-color: var(--gray); width: 60px; height: 60px;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="d-flex m-auto" fill="none">
+                                    <path
+                                        d="M4 14L5.57464 20.2986C5.61893 20.4757 5.64107 20.5643 5.66727 20.6416C5.92316 21.3971 6.60351 21.9283 7.39852 21.9933C7.4799 22 7.57119 22 7.75379 22C7.98244 22 8.09676 22 8.19307 21.9907C9.14499 21.8983 9.89833 21.145 9.99066 20.1931C10 20.0968 10 19.9824 10 19.7538V5.5M18.5 13.5C20.433 13.5 22 11.933 22 10C22 8.06701 20.433 6.5 18.5 6.5M10.25 5.5H6.5C4.01471 5.5 1.99999 7.51472 2 10C2 12.4853 4.01472 14.5 6.5 14.5H10.25C12.0164 14.5 14.1772 15.4469 15.8443 16.3556C16.8168 16.8858 17.3031 17.1509 17.6216 17.1119C17.9169 17.0757 18.1402 16.9431 18.3133 16.7011C18.5 16.4402 18.5 15.918 18.5 14.8737V5.12629C18.5 4.082 18.5 3.55985 18.3133 3.29889C18.1402 3.0569 17.9169 2.9243 17.6216 2.88813C17.3031 2.84912 16.8168 3.1142 15.8443 3.64436C14.1772 4.55312 12.0164 5.5 10.25 5.5Z"
+                                        stroke="#390000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>Konsultasikan Bisnis Anda</h4>
+                            <p>Setiap kesulitan insyaaAllah ada kemudahan, <br>
+                                Akan kami bantu untuk menguraikan masalah anda.</p>
+                        </div>
+                    </div>
+                    <div class="row  mt-4">
+                        <div class="col-2 w-auto">
+                            <div class="d-flex align-items-center rounded-pill" style="background-color: var(--gray); width: 60px; height: 60px;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"class="d-flex m-auto"
+                                    fill="none">
+                                    <path
+                                        d="M22 8.93137C22 8.32555 22 8.02265 21.8802 7.88238C21.7763 7.76068 21.6203 7.69609 21.4608 7.70865C21.2769 7.72312 21.0627 7.93731 20.6343 8.36569L17 12L20.6343 15.6343C21.0627 16.0627 21.2769 16.2769 21.4608 16.2914C21.6203 16.3039 21.7763 16.2393 21.8802 16.1176C22 15.9774 22 15.6744 22 15.0686V8.93137Z"
+                                        stroke="#390000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2 9.8C2 8.11984 2 7.27976 2.32698 6.63803C2.6146 6.07354 3.07354 5.6146 3.63803 5.32698C4.27976 5 5.11984 5 6.8 5H12.2C13.8802 5 14.7202 5 15.362 5.32698C15.9265 5.6146 16.3854 6.07354 16.673 6.63803C17 7.27976 17 8.11984 17 9.8V14.2C17 15.8802 17 16.7202 16.673 17.362C16.3854 17.9265 15.9265 18.3854 15.362 18.673C14.7202 19 13.8802 19 12.2 19H6.8C5.11984 19 4.27976 19 3.63803 18.673C3.07354 18.3854 2.6146 17.9265 2.32698 17.362C2 16.7202 2 15.8802 2 14.2V9.8Z"
+                                        stroke="#390000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>Konsultasikan Bisnis Anda</h4>
+                            <p>Setiap kesulitan insyaaAllah ada kemudahan, <br>
+                                Akan kami bantu untuk menguraikan masalah anda.</p>
+                        </div>
+                    </div>
+                    <div class="row  mt-4">
+                        <div class="col-2 w-auto">
+                            <div class="d-flex align-items-center rounded-pill" style="background-color: var(--gray); width: 60px; height: 60px;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"class="d-flex m-auto"
+                                    fill="none">
+                                    <path
+                                        d="M9 12L11 14L15.5 9.5M9.2019 20.6009C9.52965 20.5575 9.86073 20.6464 10.1218 20.8475L11.3251 21.7708C11.7228 22.0764 12.2761 22.0764 12.6727 21.7708L13.9215 20.812C14.1548 20.6331 14.4492 20.5542 14.7403 20.5931L16.3024 20.7986C16.799 20.8642 17.2779 20.5875 17.4701 20.1242L18.0712 18.6709C18.1834 18.3987 18.3989 18.1832 18.6711 18.0709L20.1243 17.4698C20.5876 17.2787 20.8643 16.7988 20.7987 16.3021L20.601 14.7966C20.5576 14.4688 20.6465 14.1377 20.8476 13.8766L21.7709 12.6733C22.0764 12.2755 22.0764 11.7222 21.7709 11.3256L20.812 10.0767C20.6332 9.84339 20.5543 9.54896 20.5932 9.25785L20.7987 7.69568C20.8643 7.19902 20.5876 6.72015 20.1243 6.52793L18.6711 5.92684C18.3989 5.81462 18.1834 5.59907 18.0712 5.32685L17.4701 3.87356C17.279 3.41024 16.799 3.13358 16.3024 3.19913L14.7403 3.40468C14.4492 3.44468 14.1548 3.36579 13.9226 3.18802L12.6738 2.22916C12.2761 1.92361 11.7228 1.92361 11.3262 2.22916L10.0774 3.18802C9.84407 3.36579 9.54965 3.44468 9.25856 3.40691L7.69647 3.20136C7.19984 3.1358 6.721 3.41246 6.52879 3.87578L5.92884 5.32907C5.81552 5.60018 5.59998 5.81573 5.32889 5.92906L3.87568 6.52904C3.41238 6.72126 3.13574 7.20013 3.20129 7.69679L3.40683 9.25897C3.4446 9.55007 3.36572 9.8445 3.18796 10.0767L2.22915 11.3256C1.92362 11.7233 1.92362 12.2767 2.22915 12.6733L3.18796 13.9222C3.36683 14.1555 3.44571 14.4499 3.40683 14.741L3.20129 16.3032C3.13574 16.7999 3.41238 17.2787 3.87568 17.471L5.32889 18.0721C5.60109 18.1843 5.81663 18.3998 5.92884 18.672L6.5299 20.1253C6.721 20.5887 7.20096 20.8653 7.69758 20.7998L9.2019 20.6009Z"
+                                        stroke="#390000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>Konsultasikan Bisnis Anda</h4>
+                            <p>Setiap kesulitan insyaaAllah ada kemudahan, <br>
+                                Akan kami bantu untuk menguraikan masalah anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TERKONEKSI BERSAMA UST END-->
         </div>
     </section>
     <!-- TENTANG END-->
+
+    <!-- SCRIPT JS -->
+    <script src="src/js/script.js" type="module"></script>
     <!-- BOOTSTRAP JS -->
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
