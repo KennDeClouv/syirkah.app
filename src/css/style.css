@@ -11,8 +11,10 @@
 	--basic-hover: #5a0707;
 	--transition: all 0.4s ease;
 }
+/* ===================== */
+/* =====          NAVBAR 		=====*/
+/* ===================== */
 
-/* ===== NAVBAR =====*/
 .nav-link:hover {
 	color: var(--basic) !important;
 	opacity: 0.75;
@@ -53,12 +55,10 @@
 	background: var(--basic-hover);
 	color: var(--gray);
 }
+/* ========================== */
+/* ===== 	     HERO BANNER  		     ===== */
+/* ========================== */
 
-/* ===== HERO BANNER ===== */
-.hero-banner-title {
-	/* background-color: var(--gray); */
-	/* min-height: 75vh; */
-}
 .banner-img {
 	width: 90%;
 }
@@ -87,7 +87,11 @@
 .banner-inner {
 	background-color: var(--gray);
 }
-/* ===== TENTANG ===== */
+
+/* ========================== */
+/* ===== 	 		TENTANG 	  			 ===== */
+/* ==========================*/
+
 .world-des {
 	border-radius: 30px;
 	border: 1px solid var(--gray);
@@ -97,9 +101,6 @@
 	bottom: 25vh;
 }
 
-.img-ust-dwi {
-	/* width: 100%; */
-}
 
 .testimoni{
 	bottom: 100px;
@@ -114,9 +115,79 @@
 .testimoni-box p{
 	font-size: .8rem;
 }
+/* ======================= */
+/*===== 		LAYANAN 			===== */
+/* ======================= */
+
+.layanan-box{
+	background-color: var(--gray);
+	width: 120px;
+	height: 130px;
+	border: 1px solid var(--gold);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1/1.1;
+}
 
 
-/* RESPONSIVE SETTINGS*/
+.ust-konsultasi{
+	font-size: 10px;
+}
+.ust-konsultasi h6{
+	font-size: 14px;
+	
+}
+.ust-konsultasi img{
+	width: 89px;
+	height: 89px;
+	
+}
+
+
+/* ======================= */
+/*===== 		CONTACT 			===== */
+/* ======================= */
+.contact-box{
+	background-color: var(--gold);
+	color: var(--white, #FFF);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.contact-box input{
+	width: 80%;
+	height: 50px;
+	border-radius: 5px;
+	border-style: none;
+	padding: 20px;
+}
+.contact-box button{
+	width: 215px;
+	height: 38px;
+	background: var(--basic, #390000);
+	color: var(--gray);
+	border-radius: 10px;
+	
+}
+
+/* ======================== */
+/*===== 		FOOTER       			===== */
+/* ======================= */
+footer{
+	background-color: var(--basic);
+	color: var(--gray);
+}
+
+
+
+
+/* ========================= */
+/* ===== RESPONSIVE SETTINGS =====*/
+/* ========================= */
 @media screen and (max-width: 992px) {
 	.nav-link {
 		display: inline-block;
