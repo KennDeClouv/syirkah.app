@@ -29,10 +29,6 @@
     <!--? STYLE -->
     <link rel="stylesheet" href="src/css/style.css">
     <title>Syirkah.App</title>
-    
-    <!-- ? =====================================  -->
-    <!--?                           SYIRKAH.APP BOOTSTRAP VERSION                       -->
-    <!-- ? =====================================  -->
 
 </head>
 
@@ -53,19 +49,19 @@
                 <div class="link ms-lg-auto m-md-4 m-sm-4 m-4 text-end">
                     <ul class="n navbar-nav gap-md-3 gap-sm-3 gap-3 z-3">
                         <li class="nav-item align-items-center " style="color: var(--dark);">
-                            <a class="nav-link" href="#beranda" style="color: var(--dark);">Beranda</a>
+                            <a class="nav-link" href="#beranda" style="color: var(--dark);" data-target="beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tentang" style="color: var(--dark);">Tentang</a>
+                            <a class="nav-link" href="#tentang" style="color: var(--dark);" data-target="tentang">Tentang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#layanan" style="color: var(--dark);">Layanan</a>
+                            <a class="nav-link" href="#layanan" style="color: var(--dark);" data-target="layanan">Layanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#faq" style="color: var(--dark);">Faq</a>
+                            <a class="nav-link" href="#faq" style="color: var(--dark);" data-target="faq">Faq</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#hubungikami" style="color: var(--dark);">Hubungi Kami</a>
+                            <a class="nav-link" href="#hubungikami" style="color: var(--dark);" data-target="hubungikami">Hubungi Kami</a>
                         </li>
                         <li>
                             <a href="#">
@@ -124,7 +120,7 @@
     <section id="tentang">
         <div class="container-fluid">
             <div class="container-lg">
-
+                <!-- TITLE -->
                 <p class="fs-4 text-center " style="letter-spacing: 3px;font-weight: 400;">
                     MEMULAI SYIRKAH ITU MUDAH
                 </p>
@@ -136,6 +132,7 @@
                     <img class="w-100"
                         src="https://s3-alpha-sig.figma.com/img/65c6/051c/405182a6729142912bd92d0728688f17?Expires=1699228800&Signature=EfJpTytYXDrQMZgdh5jAXDf4p-6jk7Msb~qKtxxLQhyXb68eJkolIeAZOwDmQLTDw6-YQxUSWWkjsyzqAd4FmfK7eBHSpqe7MnkTUTxS71lqBFQ9lYIhPAjBpiSBiI4SL~XVU0mnqrsbk9yLRFoa0bqjY54Zjoo8e1eFDZCntLHM2KUCT1mdF2jo83q6ZdFI6DIXAdxxaiALznBfFWCUyBxUPCoz3IKMP-~hFxBUCDIp77yXrEABfqsHBMtX2kXcbnNu3Zc-KtQrCO2yX5H26NWTEbEHf5pU-dv-rgBsLpwTZ~-IM8rNYo5zML8cY8OHQMg17~7VI2o0vfKkmro47w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                         alt="">
+                        <!-- DESKRIPSI TENTANG-->
                     <div class="world-des fs-6 position-relative">
                         <strong><i> Syirkah App </i></strong>adalah sebuah aplikasi untuk membantu anda dalam mengelola
                         usaha syirkah anda lebih
@@ -338,7 +335,7 @@
     <!-- TENTANG END-->
     <!-- LAYANAN -->
     <section id="layanan">
-        <div class="container-lg mb-5">
+        <div class="container-fluid py-4 mb-5">
             <p class="fs-2" style="letter-spacing: 4.8px;">Layanan Kami</p>
             <h2>7 + 1K Layanan yang akan anda dapatkan </h2>
             <div class="row mt-5 d-flex justify-content-between">
@@ -552,7 +549,8 @@
         <div class="container-lg my-5">
             <div class="contact-box w-75 py-5 px-4 rounded-5">
                 <h3>Dapatkan Update Terbaru di Email saya</h3>
-                <p class="w-75 text-center m-auto">Ingin mendapatkan penawaran dari kami? ilmu gratis dan ebook gratis? silahkan masukkan email anda
+                <p class="w-75 text-center m-auto">Ingin mendapatkan penawaran dari kami? ilmu gratis dan ebook gratis?
+                    silahkan masukkan email anda
                     agar kami dapat menjangkau anda</p>
                 <form action="" method="post" class="mt-4">
                     <input type="email" name="email" id="email" placeholder="masukkan email anda">
@@ -566,7 +564,8 @@
     <!-- FOOTER -->
     <footer>
         <div class="container-xl d-flex justify-content-between pt-3">
-            <p style="color: var(--gold); font-family: 'Times New Roman', Times, serif; font-size: 20px;">Syirkah.App</p>
+            <p style="color: var(--gold); font-family: 'Times New Roman', Times, serif; font-size: 20px;">Syirkah.App
+            </p>
             <p class="text-end">© 2023. All rights reserved by syababstudio.id</p>
         </div>
     </footer>
