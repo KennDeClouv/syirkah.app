@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Syirkah.App | Struktur Syirkah</title>
+
+</head>
+
+<body>
+    <section class="dashboardpage" id="welcomePage">
+        <!-- NAVBAR TOP-->
+        <nav
+            class="navbar navbar-expand p-0 d-flex justify-content-between position-fixed shadow-sm p-0 bg-light fixed-top py-2">
+            <div class="m-auto" style="background-color: var(--basic);">
+                <!-- NAV LOGO -->
+            </div>
+            <!-- TOP NAVBAR -->
+            <div class="container px-0 px-sm-4 justify-content-end">
+                <div class="link">
+                    <ul class=" navbar-nav gap-md-3 gap-sm-3 gap-3 z-3  align-items-center">
+                        </li>
+                        <!-- NOTIFICATION ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#notification" style="color: var(--dark);"><i
+                                    class="fa-regular fa-bell fa-2x"></i></a>
+                        </li>
+                        <!-- MESSAGE ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#message" style="color: var(--dark);"><i
+                                    class="fa-light fa-comment-dots fa-2x"></i></a>
+                        </li>
+                        <i class="fa-thin fa-pipe fa-2x d-none d-md-flex"></i>
+                        <!-- PROFILE DROPDOWN -->
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Transbara Wahyu Firmansyah
+                                    <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="" class="ms-2" style="width: 50px;">
+                                </button>
+                                <!-- DROPDOWN PROFILE -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <div class="profile text-center px-4">
+                                            <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                alt="" class="" style="width: 200px;">
+                                            <h4 class="mt-3">Transbara Wahyu Firmansyah</h4>
+                                            <hr class="w-75 m-auto" style="border: var(--dark) 2px solid;">
+                                            <p class="text-start mt-4">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptates
+                                                officiis non veniam repudiandae corrupti quam quos quis, odio
+                                                mollitia saepe obcaecati provident est, molestias ipsam error dicta?
+                                                Velit, distinctio! Modi!</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- SIDE NAVBAR -->
+        <section class="sideBar fixed-top">
+            <div class="d-inline-block " style=" color: var(--gray);">
+                <!-- SIDE NAVBAR -->
+                <div class="navbar-nav flex-column m-0 px-4 position-absolute"
+                    style="background-color: var(--basic);height: 100vh;z-index: 1030;top: 0;">
+                    <!-- NAV LOGO -->
+                    <div class="nav-logo">
+                        <a href="/" class="text-decoration-none">
+                            <p class="m-0 px-3 py-2 pb-4"
+                                style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
+                                S<span class="d-none d-sm-inline"
+                                    style="font-family: 'Times New Roman', Times, serif;">yirkah.App</span></p>
+                        </a>
+                    </div>
+                    <!-- DASHBOARD MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-rectangles-mixed"
+                                style="color: var(--gold);"></i><span
+                                class="d-none d-sm-inline ms-2">Dashboard</span></a>
+                    </div>
+                    <!-- PANDUAN SYIRKAH MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-book"
+                                style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2"><b>Panduan Syirkah</b></span></a>
+                    </div>
+                    <!-- KONSULTASI MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-comment-lines"
+                                style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2">Konsultasi</span></a>
+                    </div>
+                    <!-- SYIRKAH SAYA MENU -->
+                    <div class="nav-item d-sm-flex flex-column text-center text-sm-start">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-apartment" style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2">Syirkah saya</span></a>
+                        <!-- SYIRKAH SIDIGS  -->
+                        <div class="d-none d-sm-flex">
+                            <h6 class="ms-4"><i class="fa-solid fa-check fs-5" style="color: var(--gold);"></i>
+                                &nbsp;SIDIGS
+                            </h6>
+                        </div>
+                        <!-- SYIRKAH SYABAB STUDIO  -->
+                        <div class="d-none d-sm-flex">
+                            <h6 class="ms-5 ps-1">Syabab studio</h6>
+                        </div>
+                    </div>
+                    <!-- TAMBAH SYIRKAH -->
+                    <div class="d-flex  rounded-3 px- mt-3 ms-sm-2 ms-1">
+                        <a href="#" class="btn py-1 px-md-1 text-decoration-none"
+                            style="background-color: var(--gold);"><i
+                                class="fa-solid fa-square-plus me-md-3 ms-sm-2"></i>
+                            <span class="d-none d-sm-inline">Tambah syirkah</span></a>
+                    </div>
+                    <!-- UPGRADE ACCOUNT -->
+                    <div class="nav-item d-flex mt-auto mb-3">
+                        <a href="#" class=" m-auto text-decoration-none" style="color: var(--gold);">
+                            <span class="d-none d-sm-inline">Upgrade Account</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Main dashboard -->
+        <section class="maindashboard">
+            <div class="mx-2 px-2 mx-sm-3 px-sm-3 mx-xl-5 px-xl-5">
+                <a href="/dashboard/" class="text-decoration-none" style="color: var(--basic);">
+                    <h2 class="m-4"><b>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="38" viewBox="0 0 42 38"
+                                fill="none">
+                                <path
+                                    d="M1.23223 17.2322C0.255924 18.2085 0.255924 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM42 16.5L3 16.5V21.5L42 21.5V16.5Z"
+                                    fill="#242424" />
+                            </svg>
+                            Struktur Syirkah</b></h2>
+                </a>
+                <!-- TAMBAH SYARIKH -->
+                <div class="row">
+                    <div class="col">
+                        <div class="btn login-button">Tambah Syarikh</div>
+                    </div>
+                    <div class="col">
+                        <input type="search" name="search" id="" placeholder="search"
+                            class="py-2 px-2 rounded-4 ms-auto d-flex w-50">
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- TABLE -->
+                            <table class=" table table-borderless bdr mt-4 table-responsive">
+                                <thead class=" table-dark px-3">
+                                    <tr>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Peran</th>
+                                        <th scope="col">Jabatan</th>
+                                        <th scope="col">Saham</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Transbara Wahyu</td>
+                                        <td>Pemodal</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Dwi Riyanto</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Firman Alamsyah</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- TABLE -->
+                            <table class=" table table-borderless mt-4 table-responsive">
+                                <thead class=" table-dark px-3">
+                                    <tr>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Peran</th>
+                                        <th scope="col">Jabatan</th>
+                                        <th scope="col">Saham</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Transbara Wahyu</td>
+                                        <td>Pemodal</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Dwi Riyanto</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Firman Alamsyah</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- TABLE -->
+                            <table class=" table table-borderless mt-4 table-responsive">
+                                <thead class=" table-dark px-3">
+                                    <tr>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Peran</th>
+                                        <th scope="col">Jabatan</th>
+                                        <th scope="col">Saham</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Transbara Wahyu</td>
+                                        <td>Pemodal</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Dwi Riyanto</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Firman Alamsyah</td>
+                                        <td>Pengelola</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>Jl. Tasikmadu 6 malang</td>
+                                        <td>
+                                            <div class="btn" style="background-color: var(--gold);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M15.5799 12.0001C15.5799 13.9801 13.9799 15.5801 11.9999 15.5801C10.0199 15.5801 8.41992 13.9801 8.41992 12.0001C8.41992 10.0201 10.0199 8.42011 11.9999 8.42011C13.9799 8.42011 15.5799 10.0201 15.5799 12.0001Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M11.9998 20.2701C15.5298 20.2701 18.8198 18.1901 21.1098 14.5901C22.0098 13.1801 22.0098 10.8101 21.1098 9.40011C18.8198 5.80011 15.5298 3.72011 11.9998 3.72011C8.46984 3.72011 5.17984 5.80011 2.88984 9.40011C1.98984 10.8101 1.98984 13.1801 2.88984 14.5901C5.17984 18.1901 8.46984 20.2701 11.9998 20.2701Z"
+                                                        stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+    </section>
+    <!-- SCRIPT JS -->
+    <script src="../src/js/script.js" type="module"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

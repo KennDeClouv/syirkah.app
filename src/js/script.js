@@ -13,3 +13,13 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     },
 });
+var swiper = new Swiper(".mySwiper1", {
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

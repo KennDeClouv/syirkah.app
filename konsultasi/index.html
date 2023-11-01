@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Syirkah.App | konsultasi Syirkah</title>
+
+</head>
+
+<body>
+    <section class="dashboardpage" id="welcomePage">
+        <!-- NAVBAR TOP-->
+        <nav
+            class="navbar navbar-expand p-0 d-flex justify-content-between position-fixed shadow-sm bg-light fixed-top">
+            <div class="me-auto" style="background-color: var(--basic);">
+                <!-- NAV LOGO -->
+                <div class="nav-logo">
+                    <a href="/" class="text-decoration-none">
+                        <p class="m-0 px-3 py-2 pb-4"
+                            style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
+                            S<span class="d-none d-sm-inline"
+                                style="font-family: 'Times New Roman', Times, serif;">yirkah.App</span></p>
+                    </a>
+                </div>
+            </div>
+            <!-- TOP NAVBAR -->
+            <div class="container px-0 px-sm-4 justify-content-end">
+                <div class="link">
+                    <ul class=" navbar-nav gap-md-3 gap-sm-3 gap-3 z-3  align-items-center">
+                        </li>
+                        <!-- NOTIFICATION ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#notification" style="color: var(--dark);"><i
+                                    class="fa-regular fa-bell fa-2x"></i></a>
+                        </li>
+                        <!-- MESSAGE ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#message" style="color: var(--dark);"><i
+                                    class="fa-light fa-comment-dots fa-2x"></i></a>
+                        </li>
+                        <i class="fa-thin fa-pipe fa-2x d-none d-md-flex"></i>
+                        <!-- PROFILE DROPDOWN -->
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Transbara Wahyu Firmansyah
+                                    <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="" class="ms-2" style="width: 50px;">
+                                </button>
+                                <!-- DROPDOWN PROFILE -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <div class="profile text-center px-4">
+                                            <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                alt="" class="" style="width: 200px;">
+                                            <h4 class="mt-3">Transbara Wahyu Firmansyah</h4>
+                                            <hr class="w-75 m-auto" style="border: var(--dark) 2px solid;">
+                                            <p class="text-start mt-4">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptates
+                                                officiis non veniam repudiandae corrupti quam quos quis, odio
+                                                mollitia saepe obcaecati provident est, molestias ipsam error dicta?
+                                                Velit, distinctio! Modi!</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        <div class="maindashboard ms-0">
+            <div class="container mb-5">
+                <div class="">
+                    <h2 class="text-center pt-1 mb-5">Konsultasi Syirkah</h2>
+                    <h3>Bertemu dengan Spesialis <span style="color: var(--basic);">Syirkah</span></h3>
+                    <p><i>
+                            Kami memberikan fasilitas konsultasi bersama dengan para<br>pakar syirkah di Indonesia
+                        </i></p>
+                </div>
+            </div>
+            <section id="ustSyirkah" style="background-color: var(--gold); margin-bottom: 30px;">
+                <div class="container py-4">
+                    <div class="row column-gap-4">
+                        <div class="col text-center d-flex flex-column justify-content-center mt-4">
+                            <div style="height: 282px; aspect-ratio: 1/2;">
+                                <img src="https://s3-alpha-sig.figma.com/img/bb43/7a70/3d17b2019045a7d1f574b9f29f5fc47a?Expires=1699833600&Signature=BjRoAZLsHZch4Nerxn7d29Bxtc~vLiJqKP~HlfCvVF0eH8nA-JY6PiK5cvHRZKpgFpQ4bSNbpIXCmB908oH-GLCN6WxukeNX-mwI7S5peZDKKp4xLz86P9LSOjnU6HFV5KasfOYYNvktdcsWpXMPOl-KvSWdFRN3PQF6wzU4XKbZhfyLlGVopp1gXeprNppCJQORLxAWHaBC8kX0OC5njzjRP92pG7bGXKlVOa-sH0XM-tY4ON~fwJ54YttMoD-IwTsQQv4IVqtlAVP4mOEbJwKjeMVr5e-voJ2bwhlRbvFtjs4VIX34EdcigrMTCl3dlarofES1he14rxn0uWN6Ig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                    alt="" class="w-100 h-100">
+                            </div>
+                            <h6 style="color: var(--basic); margin-top: 20px;margin-bottom: 20px; font-weight: 600;">H.
+                                Dwi Condro Triono, Ph. D.</h6>
+                            <p>Pakar Muamalah Syariah
+                                Penulis Buku Best Seller Muamalah Syariah</p>
+                            <div class="d-flex mx-auto mt-auto">
+                                <div class="btn login-button">Konsultasi Sekarang</div>
+                            </div>
+                        </div>
+                        <div class="col text-center d-flex flex-column justify-content-center mt-4">
+                            <div style="height: 282px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/7da7/f35f/ddb8e92b533aed2a1c6bc7ebc55aa531?Expires=1699833600&Signature=IBC7u78nc16zZXHAiehosirwLL~RNZBV~qF22MhTL-F0r6yxRANCdEqD8LmDYm6vUvuBeO~02-kr3zWxMwYb0HiUZM0aPJVtEPPbA0~MYVOU0RSVMlxVlc9TfvQwg4wuAGQyFbGp0JXOSNnwyT8n5QYwDPxjPV7-lE2Tj-GsLMCWI1lSKV8ZrFQMM9wqB6rxE2Uic7pd9u2WEK9k21hQReC7ous92tMx4kzznEddjvbdKtLztGYBvw5JycJNr~0VMlU57YJegUCVzPCP3L~sy20pIeesBSsWlk8mqNTqBKl-sZjgJw4emKPcJoMcNVnvesQDiBeQoZg5fCz68l-ogw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                    alt="" class="w-100 h-100">
+                            </div>
+                            <h6 style="color: var(--basic); margin-top: 20px;margin-bottom: 20px; font-weight: 600;">H.
+                                Firly Ferdiansyah</h6>
+                            <p>CEO Bisyarah.id
+                                Penulis Buku USA (Udah Syirkahin Aja)</p>
+                            <div class="d-flex mx-auto mt-auto">
+                                <div class="btn login-button">Konsultasi Sekarang</div>
+                            </div>
+                        </div>
+                        <div class="col text-center d-flex flex-column justify-content-center mt-4">
+                            <div style="height: 282px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/895f/20f5/65b92e3872cc3f1a7b0e8a885209f4b0?Expires=1699833600&Signature=HI69bWTo-fS2qic4vzjikx1olmiVvSIs6kF26zYCHnbmlT3AnIN~dlFNtNwTJzrlF8Re0xZH6vC7sI56ScR9fB9k2Ohw8NdM9c3jExO0mhp1hHTMWSFw3ZK9TCGXLSp5mW4V4rcsUhB~QCu9vvU3p0b7kr-sxdpAk3sRdusaWQTIHhe2DJnh1PKHMlgW3T520nHxNFhl0jtKq0YOiBFFPBlhMg5l-w7SL0eA58kaprUVEcX-CRZijeN1xQI9DCrarNfEta1XAj~w8TOCkrNk7GhccXRALzIK3Rdxt~k7rXlYcgoHSN9mO3pjoRebWWBOW8gxO9G6ALWFYzclTGTHZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                    alt="" class="w-100 h-100">
+                            </div>
+                            <h6 style="color: var(--basic); margin-top: 20px;margin-bottom: 20px; font-weight: 600;">H.
+                                K.H. M. Shiddiq Al Jawi M.Si</h6>
+                            <p>Konsultan Muamalah Syariah</p>
+                            <div class="d-flex mx-auto mt-auto">
+                                <div class="btn login-button">Konsultasi Sekarang</div>
+                            </div>
+                        </div>
+                        <div class="col text-center d-flex flex-column justify-content-center mt-4">
+                            <div style="height: 282px;">
+                                <img src="https://s3-alpha-sig.figma.com/img/7f10/2bec/c1cd51ffb17bb8d5c90af40226b59fdc?Expires=1699833600&Signature=VFFqC895sCFL7gINxj4bMr2r-sJs-Byyzbs5Oib3pxFO75H89XTzpdAPU4Anol4WVM3o5x4HnhjcZ77zUUoE0fztUNq~w~oGmkDwA0YcoHPTn~f7I-0csgsd7FqcyKR9qdftRDp2YDBKH11UitlSVZ4LnuBxnrraj04PecXDeMolLWduS32~zrw6erl2~8kAZES-xdxM0xKwImuL4LdgQlyq0elKFsC5xw8sgnJa8SOPwOUTqqnluE7nho3ks-t45qdJbu42bLtbpgMrQgKeLJaNsDRPD1DJAuFSwEd1130oQ-t71woZgp8n2OO7QhHKOWCXu3CcnT5IvECseFSPRw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                    alt="" class="w-100 h-100">
+                            </div>
+                            <h6 style="color: var(--basic); margin-top: 20px;margin-bottom: 20px; font-weight: 600;">H.
+                                El Candra</h6>
+                            <p>Founder XBank Indonesia</p>
+                            <div class="d-flex mx-auto mt-auto">
+                                <div class="btn login-button">Konsultasi Sekarang</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="kataMereka">
+                <div class="container">
+                    <div class="text-center mt-5">
+                        <h2 class="mb-4">Bagaimana Kata <span style="color: var(--basic);">Mereka</span></h2>
+                        <h6>Baca Testimoni dari mereka yang sudah merasakan layanan konsultaasi Syariah</h6>
+                    </div>
+                    <div class="swiper mySwiper w-75 my-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1d47/09e0/857554c080140295db35483c5dac20a6?Expires=1699833600&Signature=CAQwOlF9g68Qzmbw611c9DfOcepG0rxcb85YwK8Lxi45wwU8wLiQI55jBvQh0GAcga-UNeZrmfZY-PoOTLySQDYCwh1gIEsogPIKoYj1yOeg-YyfCpgib0zPBihlhJkVZJZdW8bog2UsVtQYUkfJ5928npBGsItbGTiXXakHrK557UJwH02Kbd4pRrQLyPXrymXdyFBipfnUCvDX103m4UYt9ptb6hBG6-n9XxEArCIblec30-oUOcmQ6XBhbt26U0HfFu1XK1oWeLLeKwCc7H-y2mSH5goD9iFK6LEhqgHUYRDmrg6K9HehX3aqbUsCLpS3DVE9~RBoyM0~3WqWjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" style="width: 217px;">
+                                    </div>
+                                    <div class="col-12 col-md-8 d-flex flex-column m-auto">
+                                        <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki guidance,
+                                            sekarang semua panduan sekaligus cara praktis dan taktis sudah ada di
+                                            syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                            <div class="my-3" style="color: var(--gold);" >
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h6 style="color: var(--basic);">-Transbara Al-Fatih</h6>
+                                            <p>CEO SIDIGS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1d47/09e0/857554c080140295db35483c5dac20a6?Expires=1699833600&Signature=CAQwOlF9g68Qzmbw611c9DfOcepG0rxcb85YwK8Lxi45wwU8wLiQI55jBvQh0GAcga-UNeZrmfZY-PoOTLySQDYCwh1gIEsogPIKoYj1yOeg-YyfCpgib0zPBihlhJkVZJZdW8bog2UsVtQYUkfJ5928npBGsItbGTiXXakHrK557UJwH02Kbd4pRrQLyPXrymXdyFBipfnUCvDX103m4UYt9ptb6hBG6-n9XxEArCIblec30-oUOcmQ6XBhbt26U0HfFu1XK1oWeLLeKwCc7H-y2mSH5goD9iFK6LEhqgHUYRDmrg6K9HehX3aqbUsCLpS3DVE9~RBoyM0~3WqWjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" style="width: 217px;">
+                                    </div>
+                                    <div class="col-12 col-md-8 d-flex flex-column m-auto">
+                                        <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki guidance,
+                                            sekarang semua panduan sekaligus cara praktis dan taktis sudah ada di
+                                            syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                            <div class="my-3" style="color: var(--gold);" >
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h6 style="color: var(--basic);">-Transbara Al-Fatih</h6>
+                                            <p>CEO SIDIGS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1d47/09e0/857554c080140295db35483c5dac20a6?Expires=1699833600&Signature=CAQwOlF9g68Qzmbw611c9DfOcepG0rxcb85YwK8Lxi45wwU8wLiQI55jBvQh0GAcga-UNeZrmfZY-PoOTLySQDYCwh1gIEsogPIKoYj1yOeg-YyfCpgib0zPBihlhJkVZJZdW8bog2UsVtQYUkfJ5928npBGsItbGTiXXakHrK557UJwH02Kbd4pRrQLyPXrymXdyFBipfnUCvDX103m4UYt9ptb6hBG6-n9XxEArCIblec30-oUOcmQ6XBhbt26U0HfFu1XK1oWeLLeKwCc7H-y2mSH5goD9iFK6LEhqgHUYRDmrg6K9HehX3aqbUsCLpS3DVE9~RBoyM0~3WqWjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" style="width: 217px;">
+                                    </div>
+                                    <div class="col-12 col-md-8 d-flex flex-column m-auto">
+                                        <p>“Dulu saya kesulitan membangun bisnis syirkah karena tidak memiliki guidance,
+                                            sekarang semua panduan sekaligus cara praktis dan taktis sudah ada di
+                                            syirkah.app. Syirkah Mudah jadi Berkah.”</p>
+                                            <div class="my-3" style="color: var(--gold);" >
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h6 style="color: var(--basic);">-Transbara Al-Fatih</h6>
+                                            <p>CEO SIDIGS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="swiper-pagination" style="--swiper-pagination-color:var(--basic)"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- SCRIPT JS -->
+    <script src="../src/js/script.js" type="module"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

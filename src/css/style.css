@@ -103,25 +103,24 @@
 	bottom: 25vh;
 }
 
-
-.testimoni{
+.testimoni {
 	bottom: 100px;
 }
-.testimoni-box{
+.testimoni-box {
 	background-color: var(--gray);
 	cursor: grab;
 }
-.testimoni-box img{
+.testimoni-box img {
 	width: 75px;
 }
-.testimoni-box p{
-	font-size: .8rem;
+.testimoni-box p {
+	font-size: 0.8rem;
 }
 /* ----------------------------------------------
 		LAYANAN SETTINGS
 -----------------------------------------------*/
 
-.layanan-box{
+.layanan-box {
 	width: 120px;
 	height: 145px;
 	border: 1px solid var(--gold);
@@ -134,40 +133,36 @@
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-
-.ust-konsultasi{
+.ust-konsultasi {
 	font-size: 10px;
 }
-.ust-konsultasi h6{
+.ust-konsultasi h6 {
 	font-size: 14px;
-	
 }
-.ust-konsultasi img{
+.ust-konsultasi img {
 	width: 89px;
 	height: 89px;
-	
 }
-
 
 /* ----------------------------------------------
 		CONTACT SETTINGS
 -----------------------------------------------*/
-.contact-box{
+.contact-box {
 	background-color: var(--gold);
-	color: var(--white, #FFF);
+	color: var(--white, #fff);
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
-.contact-box input{
+.contact-box input {
 	width: 80%;
 	height: 50px;
 	border-radius: 5px;
 	border-style: none;
 	padding: 20px;
 }
-.contact-box button{
+.contact-box button {
 	width: 215px;
 	height: 38px;
 	background: var(--basic, #390000);
@@ -176,64 +171,190 @@
 	border-style: none;
 	transition: var(--transition);
 }
-.contact-box button:hover{
+.contact-box button:hover {
 	background-color: #5a0707;
 }
 
 /* ----------------------------------------------
 		FOOTER SETTINGS
 -----------------------------------------------*/
-footer{
+footer {
 	background-color: var(--basic);
 	color: var(--gray);
 }
-
-
-
 
 /* ----------------------------------------------
 ------------------------------------------------
 LOGIN PAGE SETTINGS
 ------------------------------------------------
 -----------------------------------------------*/
-.loginpage{
+
+.loginpage {
 	min-height: 100vh;
 }
-.background{
+.background {
 	width: 100%;
 	height: 70vh;
-	background: var(--basic, #390000) ;
+	background: var(--basic, #390000);
 	position: absolute;
 	z-index: -10;
 }
-.login-title p{
-	font-family: 'Times New Roman', Times, serif;
+.login-title p {
+	font-family: "Times New Roman", Times, serif;
 }
-.loginform{
-	background: #FFF;
+.loginform {
+	background: #fff;
 	width: 100%;
 	height: 100%;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
-	
-	/* ----------------------------------------------
+/* ----------------------------------------------
+------------------------------------------------
+WELCOME PAGE SETTINGS
+------------------------------------------------
+-----------------------------------------------*/
+.welcomepage {
+	width: 100%;
+	height: 100vh;
+	background: var(--basic);
+	background-image: url(https://s3-alpha-sig.figma.com/img/65c6/051c/405182a6729142912bd92d0728688f17?Expires=1699228800&Signature=EfJpTytYXDrQMZgdh5jAXDf4p-6jk7Msb~qKtxxLQhyXb68eJkolIeAZOwDmQLTDw6-YQxUSWWkjsyzqAd4FmfK7eBHSpqe7MnkTUTxS71lqBFQ9lYIhPAjBpiSBiI4SL~XVU0mnqrsbk9yLRFoa0bqjY54Zjoo8e1eFDZCntLHM2KUCT1mdF2jo83q6ZdFI6DIXAdxxaiALznBfFWCUyBxUPCoz3IKMP-~hFxBUCDIp77yXrEABfqsHBMtX2kXcbnNu3Zc-KtQrCO2yX5H26NWTEbEHf5pU-dv-rgBsLpwTZ~-IM8rNYo5zML8cY8OHQMg17~7VI2o0vfKkmro47w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+	background-size: 100% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.welcome-form {
+	width: 646px;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 25px;
+	backdrop-filter: blur(2px);
+}
+
+/* ----------------------------------------------
+------------------------------------------------
+DASHBOARD PAGE SETTINGS
+------------------------------------------------
+-----------------------------------------------*/
+.profile {
+	width: 35vw;
+}
+/* .side-nav {
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 100vh;
+	background-color: var(--basic);
+	color: var(--gray);
+	z-index: 100;
+} */
+.side-nav a {
+	color: var(--gray);
+}
+
+.maindashboard{
+	margin-left: 238px;
+	margin-top: 80px;
+}
+
+.dashboard-box{
+	border: gray 1px solid;
+	border: rgba(0, 0, 0, 0.20) 1px solid;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.logo-usaha{
+	border: gray 1px solid;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* height: 70%; */
+	/* min-height: 230px; */
+	aspect-ratio: 14/6;
+}
+
+.menu{
+	border: lightgray 1px solid;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	padding: 6px 8px;
+	border-radius: 16px;
+	width: 172px;
+	height: 224px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-keuangan{
+	border: lightgray 1px solid;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	padding: 6px 8px;
+	border-radius: 16px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------------------------
+------------------------------------------------
+PANDUAN PAGE SETTINGS
+------------------------------------------------
+-----------------------------------------------*/
+
+.panduan-menu{
+	border: var(--basic) 3px solid;
+	border-radius: 10px;
+	padding: 14px 20px;
+	width: 90%;
+	cursor: pointer;
+}
+/* ----------------------------------------------
+------------------------------------------------
+STURKTUR SYIRKAH SETTINGS
+------------------------------------------------
+-----------------------------------------------*/
+.tb{
+	padding: 10px 16px;
+	border: gray 1px solid !important;
+	border-radius: 200px !important;
+}
+.bdr {
+	border-radius: 6px;
+	overflow: hidden;
+}
+/* ----------------------------------------------
 			RESPONSIVE SETTINGS
 	-----------------------------------------------*/
-	@media screen and (max-width: 992px) {
-		.nav-link {
-			display: inline-block;
-		}
-		.nav-link::after {
-			margin-right: 0;
-			transform-origin: right;
-		}
-		.banner-inner {
-			min-height: 70vh;
-		}
+@media screen and (max-width: 992px) {
+	.nav-link {
+		display: inline-block;
 	}
-	@media screen and (max-width: 768px) {
-		.world-des {
-			bottom: 0;
-		}
+	.nav-link::after {
+		margin-right: 0;
+		transform-origin: right;
+	}
+	.banner-inner {
+		min-height: 70vh;
+	}
+}
+@media screen and (max-width: 768px) {
+	.world-des {
+		bottom: 0;
+	}
+	.side-nav {
+		width: auto;
+		padding-top: 20px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.maindashboard{
+		margin-left: 88px;
+		margin-top: 80px;
 	}
 }

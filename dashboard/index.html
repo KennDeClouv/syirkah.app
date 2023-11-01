@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Syirkah.App | Dashboard</title>
+
+</head>
+
+<body>
+    <section class="dashboardpage" id="welcomePage">
+        <!-- NAVBAR TOP-->
+        <nav
+            class="navbar navbar-expand p-0 d-flex justify-content-between position-fixed shadow-sm p-0 bg-light fixed-top py-2">
+            <div class="m-auto" style="background-color: var(--basic);">
+                <!-- NAV LOGO -->
+            </div>
+            <!-- TOP NAVBAR -->
+            <div class="container px-0 px-sm-4 justify-content-end">
+                <div class="link">
+                    <ul class=" navbar-nav gap-md-3 gap-sm-3 gap-3 z-3  align-items-center">
+                        </li>
+                        <!-- NOTIFICATION ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#notification" style="color: var(--dark);"><i
+                                    class="fa-regular fa-bell fa-2x"></i></a>
+                        </li>
+                        <!-- MESSAGE ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#message" style="color: var(--dark);"><i
+                                    class="fa-light fa-comment-dots fa-2x"></i></a>
+                        </li>
+                        <i class="fa-thin fa-pipe fa-2x d-none d-md-flex"></i>
+                        <!-- PROFILE DROPDOWN -->
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Transbara Wahyu Firmansyah
+                                    <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="" class="ms-2" style="width: 50px;">
+                                </button>
+                                <!-- DROPDOWN PROFILE -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <div class="profile text-center px-4">
+                                            <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                alt="" class="" style="width: 200px;">
+                                            <h4 class="mt-3">Transbara Wahyu Firmansyah</h4>
+                                            <hr class="w-75 m-auto" style="border: var(--dark) 2px solid;">
+                                            <p class="text-start mt-4">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptates
+                                                officiis non veniam repudiandae corrupti quam quos quis, odio
+                                                mollitia saepe obcaecati provident est, molestias ipsam error dicta?
+                                                Velit, distinctio! Modi!</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- SIDE NAVBAR -->
+        <section class="sideBar fixed-top">
+            <div class="d-inline-block " style=" color: var(--gray);">
+                <!-- SIDE NAVBAR -->
+                <div class="navbar-nav flex-column m-0 px-4 position-absolute"
+                    style="background-color: var(--basic);height: 100vh;z-index: 1030;top: 0;">
+                    <!-- NAV LOGO -->
+                    <div class="nav-logo">
+                        <a href="/" class="text-decoration-none">
+                            <p class="m-0 px-3 py-2 pb-4"
+                                style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
+                                S<span class="d-none d-sm-inline"
+                                    style="font-family: 'Times New Roman', Times, serif;">yirkah.App</span></p>
+                        </a>
+                    </div>
+                    <!-- DASHBOARD MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-rectangles-mixed"
+                                style="color: var(--gold);"></i><span
+                                class="d-none d-sm-inline ms-2"><b>Dashboard</b></span></a>
+                    </div>
+                    <!-- PANDUAN SYIRKAH MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-book"
+                                style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2">Panduan Syirkah</span></a>
+                    </div>
+                    <!-- KONSULTASI MENU -->
+                    <div class="nav-item d-flex">
+                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-comment-lines"
+                                style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2">Konsultasi</span></a>
+                    </div>
+                    <!-- SYIRKAH SAYA MENU -->
+                    <div class="nav-item d-sm-flex flex-column text-center text-sm-start">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-apartment" style="color: var(--gold);"></i>
+                            <span class="d-none d-sm-inline  ms-2">Syirkah saya</span></a>
+                        <!-- SYIRKAH SIDIGS  -->
+                        <div class="d-none d-sm-flex">
+                            <h6 class="ms-4"><i class="fa-solid fa-check fs-5" style="color: var(--gold);"></i>
+                                &nbsp;SIDIGS
+                            </h6>
+                        </div>
+                        <!-- SYIRKAH SYABAB STUDIO  -->
+                        <div class="d-none d-sm-flex">
+                            <h6 class="ms-5 ps-1">Syabab studio</h6>
+                        </div>
+                    </div>
+                    <!-- TAMBAH SYIRKAH -->
+                    <div class="d-flex  rounded-3 px- mt-3 ms-sm-2 ms-1">
+                        <a href="#" class="btn py-1 px-md-1 text-decoration-none"
+                            style="background-color: var(--gold);"><i
+                                class="fa-solid fa-square-plus me-md-3 ms-sm-2"></i>
+                            <span class="d-none d-sm-inline">Tambah syirkah</span></a>
+                    </div>
+                    <!-- UPGRADE ACCOUNT -->
+                    <div class="nav-item d-flex mt-auto mb-3">
+                        <a href="#" class=" m-auto text-decoration-none" style="color: var(--gold);">
+                            <span class="d-none d-sm-inline">Upgrade Account</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="maindashboard">
+            <div class="mx-2 px-2 mx-sm-3 px-sm-3 mx-xl-5 px-xl-5">
+                <p class="m-2">Selamat Datang <b>Transbara,</b> di perusahaan syirkah <b>SIDIGS</b></p>
+                <div class="dashboard-box p-4">
+                    <div class="row">
+                        <!-- LOGO USAHA -->
+                        <div class="col-12 col-lg-7 d-flex flex-column px-3">
+                            <div class="logo-usaha">
+                                <img src="https://s3-alpha-sig.figma.com/img/07cb/081d/09d3e8c535fad9b1426196fa5e9e163e?Expires=1699228800&Signature=kb-DPOjfKkcFUpYI~UCl4CSx88HW4IWOkZGUxu3EUFK-EOvXUSh8jZndJJGcd6~rFNet0WS39jgIMKl3XTpkeu~Q-AoqoVsViSuYbQPaRp66pJF1g2UUzImlI5Mjso5QteWyBpRVeNVSnqbSeDPlSlzEsIv2sgIm~VvayjhgHCaD7v8pYXXPgfD6b8rWklXrOm06wTfUFF9qnpplUtA4lttuD8cS98jn8CmB0edqc-cVMTh-ksnZNrx9nSk3v2MZgQq36f1KzMSUziz2rnydGdqp-pqsdBe-HHgARUGksJwWcvCdPBBYJwrp7hYkhEnLbNYmxcW9icKENgE6yuL7bQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                    alt="" class="" style="width: 16vw">
+                            </div>
+                            <div class="pt-4 mt-auto">
+                                <p>Mulai Syirkah<span class="rounded-pill p-2 ms-3"
+                                        style="border: var(--basic) 1px solid;"> 13 Juni 2020</span></p>
+                            </div>
+                        </div>
+                        <!-- STATUS USAHA -->
+                        <div class="col">
+                            <form class="h-100 d-flex flex-column">
+                                <div class="mb-3">
+                                    <label for="jenisSyirkah" class="form-label">Jenis Syirkah</label>
+                                    <input class="form-control" type="text" value="Syirkah Innan"
+                                        aria-label="Disabled input example" disabled readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jumlahSyirkah" class="form-label">Jumlah Syirkah</label>
+                                    <input class="form-control" type="text" value="3"
+                                        aria-label="Disabled input example" disabled readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="kategoriPerusahaan" class="form-label">Kategori perusahaan</label>
+                                    <input class="form-control" type="text" value="Startup Digital"
+                                        aria-label="Disabled input example" disabled readonly>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat
+                                        Konsultasi</a><br>
+                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat Tutup
+                                        Buku</a><br>
+                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat
+                                        Pergantian Pengelola</a><br>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOTTOM MENU -->
+                <div class="row mx-auto text-center mt-2 row-gap-3">
+                    <!-- STRUKTUR PERUSAHAAN -->
+                    <div class="col">
+                        <div class="menu p-2">
+                            <!-- INFO BUTTON -->
+                            <div class="text-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 16C11.7348 16 11.4804 16.1054 11.2929 16.2929C11.1054 16.4804 11 16.7348 11 17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17C13 16.7348 12.8946 16.4804 12.7071 16.2929C12.5196 16.1054 12.2652 16 12 16ZM12 6.5C11.0386 6.5 10.1166 6.88192 9.43674 7.56174C8.75692 8.24156 8.375 9.16359 8.375 10.125C8.375 10.3902 8.48036 10.6446 8.66789 10.8321C8.85543 11.0196 9.10978 11.125 9.375 11.125C9.64022 11.125 9.89457 11.0196 10.0821 10.8321C10.2696 10.6446 10.375 10.3902 10.375 10.125C10.3753 9.83004 10.4559 9.54072 10.6082 9.28809C10.7604 9.03545 10.9786 8.82902 11.2392 8.69092C11.4998 8.55282 11.7932 8.48827 12.0877 8.50419C12.3822 8.52011 12.6669 8.61589 12.9111 8.78127C13.1553 8.94666 13.35 9.1754 13.4741 9.44297C13.5982 9.71054 13.6472 10.0069 13.6157 10.3001C13.5843 10.5934 13.4736 10.8726 13.2955 11.1078C13.1175 11.3429 12.8788 11.5252 12.605 11.635C11.929 11.905 11 12.597 11 13.75V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14C13 13.756 13.05 13.634 13.261 13.53L13.348 13.49C14.1288 13.1759 14.776 12.6 15.1787 11.8609C15.5814 11.1219 15.7145 10.2658 15.5551 9.43938C15.3958 8.61299 14.9539 7.86776 14.3052 7.33147C13.6566 6.79518 12.8416 6.50122 12 6.5Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                            <!-- STRUKTUR PERUSAHAAN ICON -->
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="99" height="84" viewBox="0 0 99 84"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M40.25 15.5C40.25 13.2457 41.1785 11.0837 42.8311 9.48959C44.4838 7.89553 46.7253 7 49.0625 7H54.9375C57.2747 7 59.5162 7.89553 61.1689 9.48959C62.8215 11.0837 63.75 13.2457 63.75 15.5V21.1667C63.75 23.421 62.8215 25.583 61.1689 27.1771C59.5162 28.7711 57.2747 29.6667 54.9375 29.6667V35.3333H87.25C88.0291 35.3333 88.7762 35.6318 89.3271 36.1632C89.878 36.6945 90.1875 37.4152 90.1875 38.1667V43.8333C90.1875 44.5848 89.878 45.3055 89.3271 45.8368C88.7762 46.3682 88.0291 46.6667 87.25 46.6667C86.4709 46.6667 85.7238 46.3682 85.1729 45.8368C84.622 45.3055 84.3125 44.5848 84.3125 43.8333V41H54.9375V43.8333C54.9375 44.5848 54.628 45.3055 54.0771 45.8368C53.5262 46.3682 52.7791 46.6667 52 46.6667C51.2209 46.6667 50.4738 46.3682 49.9229 45.8368C49.372 45.3055 49.0625 44.5848 49.0625 43.8333V41H19.6875V43.8333C19.6875 44.5848 19.378 45.3055 18.8271 45.8368C18.2762 46.3682 17.5291 46.6667 16.75 46.6667C15.9709 46.6667 15.2238 46.3682 14.6729 45.8368C14.122 45.3055 13.8125 44.5848 13.8125 43.8333V38.1667C13.8125 37.4152 14.122 36.6945 14.6729 36.1632C15.2238 35.6318 15.9709 35.3333 16.75 35.3333H49.0625V29.6667C46.7253 29.6667 44.4838 28.7711 42.8311 27.1771C41.1785 25.583 40.25 23.421 40.25 21.1667V15.5ZM5 60.8333C5 58.579 5.92846 56.417 7.58112 54.8229C9.23379 53.2289 11.4753 52.3333 13.8125 52.3333H19.6875C22.0247 52.3333 24.2662 53.2289 25.9189 54.8229C27.5715 56.417 28.5 58.579 28.5 60.8333V66.5C28.5 68.7543 27.5715 70.9163 25.9189 72.5104C24.2662 74.1045 22.0247 75 19.6875 75H13.8125C11.4753 75 9.23379 74.1045 7.58112 72.5104C5.92846 70.9163 5 68.7543 5 66.5L5 60.8333ZM40.25 60.8333C40.25 58.579 41.1785 56.417 42.8311 54.8229C44.4838 53.2289 46.7253 52.3333 49.0625 52.3333H54.9375C57.2747 52.3333 59.5162 53.2289 61.1689 54.8229C62.8215 56.417 63.75 58.579 63.75 60.8333V66.5C63.75 68.7543 62.8215 70.9163 61.1689 72.5104C59.5162 74.1045 57.2747 75 54.9375 75H49.0625C46.7253 75 44.4838 74.1045 42.8311 72.5104C41.1785 70.9163 40.25 68.7543 40.25 66.5V60.8333ZM75.5 60.8333C75.5 58.579 76.4285 56.417 78.0811 54.8229C79.7338 53.2289 81.9753 52.3333 84.3125 52.3333H90.1875C92.5247 52.3333 94.7662 53.2289 96.4189 54.8229C98.0715 56.417 99 58.579 99 60.8333V66.5C99 68.7543 98.0715 70.9163 96.4189 72.5104C94.7662 74.1045 92.5247 75 90.1875 75H84.3125C81.9753 75 79.7338 74.1045 78.0811 72.5104C76.4285 70.9163 75.5 68.7543 75.5 66.5V60.8333Z"
+                                        fill="#D9B600" />
+                                </svg>
+                            </div>
+                            <!-- DESKRIPSI -->
+                            <p>Struktur perusahaan</p>
+                            <div class="btn mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STRUKTUR PERUSAHAAN END-->
+                    <!-- AKAD PENSYIRKAH -->
+                    <div class="col">
+                        <div class="menu py-2">
+                            <!-- INFO BUTTON -->
+                            <div class="text-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 16C11.7348 16 11.4804 16.1054 11.2929 16.2929C11.1054 16.4804 11 16.7348 11 17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17C13 16.7348 12.8946 16.4804 12.7071 16.2929C12.5196 16.1054 12.2652 16 12 16ZM12 6.5C11.0386 6.5 10.1166 6.88192 9.43674 7.56174C8.75692 8.24156 8.375 9.16359 8.375 10.125C8.375 10.3902 8.48036 10.6446 8.66789 10.8321C8.85543 11.0196 9.10978 11.125 9.375 11.125C9.64022 11.125 9.89457 11.0196 10.0821 10.8321C10.2696 10.6446 10.375 10.3902 10.375 10.125C10.3753 9.83004 10.4559 9.54072 10.6082 9.28809C10.7604 9.03545 10.9786 8.82902 11.2392 8.69092C11.4998 8.55282 11.7932 8.48827 12.0877 8.50419C12.3822 8.52011 12.6669 8.61589 12.9111 8.78127C13.1553 8.94666 13.35 9.1754 13.4741 9.44297C13.5982 9.71054 13.6472 10.0069 13.6157 10.3001C13.5843 10.5934 13.4736 10.8726 13.2955 11.1078C13.1175 11.3429 12.8788 11.5252 12.605 11.635C11.929 11.905 11 12.597 11 13.75V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14C13 13.756 13.05 13.634 13.261 13.53L13.348 13.49C14.1288 13.1759 14.776 12.6 15.1787 11.8609C15.5814 11.1219 15.7145 10.2658 15.5551 9.43938C15.3958 8.61299 14.9539 7.86776 14.3052 7.33147C13.6566 6.79518 12.8416 6.50122 12 6.5Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                            <!-- AKAD PERSYIRKAH ICON -->
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"
+                                    fill="none">
+                                    <path
+                                        d="M76.6667 -1.33334C77.8159 -1.33334 78.9181 -0.876797 79.7308 -0.0641398C80.5435 0.748518 81 1.85072 81 2.99999V19.2803L72.3333 27.947V7.33332H11.6667V76.6666H72.3333V64.7153L81 56.0486V81C81 82.1493 80.5435 83.2515 79.7308 84.0641C78.9181 84.8768 77.8159 85.3333 76.6667 85.3333H7.33333C6.18406 85.3333 5.08186 84.8768 4.2692 84.0641C3.45655 83.2515 3 82.1493 3 81V2.99999C3 1.85072 3.45655 0.748518 4.2692 -0.0641398C5.08186 -0.876797 6.18406 -1.33334 7.33333 -1.33334H76.6667ZM84.3713 28.168L90.4987 34.2953L56.794 68L50.658 67.9913L50.6667 61.8727L84.3713 28.168ZM46.3333 42V50.6667H24.6667V42H46.3333ZM59.3333 24.6667V33.3333H24.6667V24.6667H59.3333Z"
+                                        fill="#D9B600" />
+                                </svg>
+                            </div>
+                            <!-- DESKRIPSI -->
+                            <p class="mt-2">Akad Persyirkah</p>
+                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STRUKTUR PERUSAHAAN END-->
+                    <!-- AKAD KETENAGAKERJAAN -->
+                    <div class="col">
+                        <div class="menu py-2">
+                            <!-- INFO BUTTON -->
+                            <div class="text-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 16C11.7348 16 11.4804 16.1054 11.2929 16.2929C11.1054 16.4804 11 16.7348 11 17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17C13 16.7348 12.8946 16.4804 12.7071 16.2929C12.5196 16.1054 12.2652 16 12 16ZM12 6.5C11.0386 6.5 10.1166 6.88192 9.43674 7.56174C8.75692 8.24156 8.375 9.16359 8.375 10.125C8.375 10.3902 8.48036 10.6446 8.66789 10.8321C8.85543 11.0196 9.10978 11.125 9.375 11.125C9.64022 11.125 9.89457 11.0196 10.0821 10.8321C10.2696 10.6446 10.375 10.3902 10.375 10.125C10.3753 9.83004 10.4559 9.54072 10.6082 9.28809C10.7604 9.03545 10.9786 8.82902 11.2392 8.69092C11.4998 8.55282 11.7932 8.48827 12.0877 8.50419C12.3822 8.52011 12.6669 8.61589 12.9111 8.78127C13.1553 8.94666 13.35 9.1754 13.4741 9.44297C13.5982 9.71054 13.6472 10.0069 13.6157 10.3001C13.5843 10.5934 13.4736 10.8726 13.2955 11.1078C13.1175 11.3429 12.8788 11.5252 12.605 11.635C11.929 11.905 11 12.597 11 13.75V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14C13 13.756 13.05 13.634 13.261 13.53L13.348 13.49C14.1288 13.1759 14.776 12.6 15.1787 11.8609C15.5814 11.1219 15.7145 10.2658 15.5551 9.43938C15.3958 8.61299 14.9539 7.86776 14.3052 7.33147C13.6566 6.79518 12.8416 6.50122 12 6.5Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                            <!-- AKAD KETENAGAKERJAAN ICON -->
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"
+                                    fill="none">
+                                    <path
+                                        d="M77.9809 50.6441L70.1059 42.7691C69.6136 42.277 68.9461 42.0006 68.25 42.0006C67.5539 42.0006 66.8864 42.277 66.3941 42.7691L42 67.1633V78.75H53.5868L77.9809 54.3559C78.473 53.8636 78.7494 53.1961 78.7494 52.5C78.7494 51.8039 78.473 51.1364 77.9809 50.6441ZM51.4133 73.5H47.25V69.3368L60.375 56.2118L64.5382 60.375L51.4133 73.5ZM68.25 56.6633L64.0868 52.5L68.25 48.3368L72.4132 52.5L68.25 56.6633ZM44.625 39.375H28.875C26.7864 39.375 24.7834 40.2047 23.3065 41.6815C21.8297 43.1584 21 45.1614 21 47.25V49.875H26.25V47.25C26.25 46.5538 26.5266 45.8861 27.0188 45.3938C27.5111 44.9016 28.1788 44.625 28.875 44.625H44.625C45.3212 44.625 45.9889 44.9016 46.4812 45.3938C46.9734 45.8861 47.25 46.5538 47.25 47.25V49.875H52.5V47.25C52.5 45.1614 51.6703 43.1584 50.1935 41.6815C48.7166 40.2047 46.7136 39.375 44.625 39.375ZM36.75 36.75C38.8267 36.75 40.8568 36.1342 42.5835 34.9804C44.3102 33.8267 45.656 32.1868 46.4507 30.2682C47.2455 28.3496 47.4534 26.2384 47.0482 24.2016C46.6431 22.1648 45.6431 20.2938 44.1746 18.8254C42.7062 17.3569 40.8352 16.3569 38.7984 15.9518C36.7616 15.5466 34.6504 15.7545 32.7318 16.5493C30.8132 17.344 29.1733 18.6898 28.0196 20.4165C26.8658 22.1432 26.25 24.1733 26.25 26.25C26.25 29.0348 27.3562 31.7055 29.3254 33.6746C31.2945 35.6438 33.9652 36.75 36.75 36.75ZM36.75 21C37.7884 21 38.8034 21.3079 39.6667 21.8848C40.5301 22.4617 41.203 23.2816 41.6004 24.2409C41.9977 25.2002 42.1017 26.2558 41.8991 27.2742C41.6966 28.2926 41.1965 29.2281 40.4623 29.9623C39.7281 30.6965 38.7926 31.1966 37.7742 31.3991C36.7558 31.6017 35.7002 31.4977 34.7409 31.1004C33.7816 30.703 32.9617 30.0301 32.3848 29.1667C31.8079 28.3034 31.5 27.2884 31.5 26.25C31.5 24.8576 32.0531 23.5223 33.0377 22.5377C34.0223 21.5531 35.3576 21 36.75 21Z"
+                                        fill="#D9B600" />
+                                    <path
+                                        d="M31.5 78.75H15.75C14.358 78.7486 13.0235 78.195 12.0392 77.2108C11.055 76.2265 10.5014 74.892 10.5 73.5V10.5C10.5014 9.10804 11.055 7.77349 12.0392 6.78922C13.0235 5.80496 14.358 5.25139 15.75 5.25H57.75C59.142 5.25139 60.4765 5.80496 61.4608 6.78922C62.445 7.77349 62.9986 9.10804 63 10.5V36.75H57.75V10.5H15.75V73.5H31.5V78.75Z"
+                                        fill="#D9B600" />
+                                </svg>
+                            </div>
+                            <!-- DESKRIPSI -->
+                            <p class="">Akad Ketenagakerjaan</p>
+                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AKAD KETENAGAKERJAAN END-->
+                    <!-- LAPORAN KEUANGAN -->
+                    <div class="col">
+                        <div class="menu py-2">
+                            <!-- INFO BUTTON -->
+                            <div class="text-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 16C11.7348 16 11.4804 16.1054 11.2929 16.2929C11.1054 16.4804 11 16.7348 11 17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17C13 16.7348 12.8946 16.4804 12.7071 16.2929C12.5196 16.1054 12.2652 16 12 16ZM12 6.5C11.0386 6.5 10.1166 6.88192 9.43674 7.56174C8.75692 8.24156 8.375 9.16359 8.375 10.125C8.375 10.3902 8.48036 10.6446 8.66789 10.8321C8.85543 11.0196 9.10978 11.125 9.375 11.125C9.64022 11.125 9.89457 11.0196 10.0821 10.8321C10.2696 10.6446 10.375 10.3902 10.375 10.125C10.3753 9.83004 10.4559 9.54072 10.6082 9.28809C10.7604 9.03545 10.9786 8.82902 11.2392 8.69092C11.4998 8.55282 11.7932 8.48827 12.0877 8.50419C12.3822 8.52011 12.6669 8.61589 12.9111 8.78127C13.1553 8.94666 13.35 9.1754 13.4741 9.44297C13.5982 9.71054 13.6472 10.0069 13.6157 10.3001C13.5843 10.5934 13.4736 10.8726 13.2955 11.1078C13.1175 11.3429 12.8788 11.5252 12.605 11.635C11.929 11.905 11 12.597 11 13.75V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14C13 13.756 13.05 13.634 13.261 13.53L13.348 13.49C14.1288 13.1759 14.776 12.6 15.1787 11.8609C15.5814 11.1219 15.7145 10.2658 15.5551 9.43938C15.3958 8.61299 14.9539 7.86776 14.3052 7.33147C13.6566 6.79518 12.8416 6.50122 12 6.5Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                            <!-- LAPORAN KEUANGAN ICON -->
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"
+                                    fill="none">
+                                    <path
+                                        d="M49 7H21C17.15 7 14 10.15 14 14V70C14 73.85 17.15 77 21 77H63C66.85 77 70 73.85 70 70V28L49 7ZM63 70H21V14H45.5V31.5H63V70ZM31.5 45.5V66.5H24.5V45.5H31.5ZM52.5 52.5V66.5H59.5V52.5H52.5ZM38.5 38.5V66.5H45.5V38.5H38.5Z"
+                                        fill="#D9B600" />
+                                </svg>
+                            </div>
+                            <!-- DESKRIPSI -->
+                            <p>Laporan Keuangan</p>
+                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LAPORAN KEUANGAN END-->
+                    <!-- BUBARKAN SYIRKAH -->
+                    <div class="col">
+                        <div class="menu py-2">
+                            <!-- INFO BUTTON -->
+                            <div class="text-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 16C11.7348 16 11.4804 16.1054 11.2929 16.2929C11.1054 16.4804 11 16.7348 11 17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17C13 16.7348 12.8946 16.4804 12.7071 16.2929C12.5196 16.1054 12.2652 16 12 16ZM12 6.5C11.0386 6.5 10.1166 6.88192 9.43674 7.56174C8.75692 8.24156 8.375 9.16359 8.375 10.125C8.375 10.3902 8.48036 10.6446 8.66789 10.8321C8.85543 11.0196 9.10978 11.125 9.375 11.125C9.64022 11.125 9.89457 11.0196 10.0821 10.8321C10.2696 10.6446 10.375 10.3902 10.375 10.125C10.3753 9.83004 10.4559 9.54072 10.6082 9.28809C10.7604 9.03545 10.9786 8.82902 11.2392 8.69092C11.4998 8.55282 11.7932 8.48827 12.0877 8.50419C12.3822 8.52011 12.6669 8.61589 12.9111 8.78127C13.1553 8.94666 13.35 9.1754 13.4741 9.44297C13.5982 9.71054 13.6472 10.0069 13.6157 10.3001C13.5843 10.5934 13.4736 10.8726 13.2955 11.1078C13.1175 11.3429 12.8788 11.5252 12.605 11.635C11.929 11.905 11 12.597 11 13.75V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14C13 13.756 13.05 13.634 13.261 13.53L13.348 13.49C14.1288 13.1759 14.776 12.6 15.1787 11.8609C15.5814 11.1219 15.7145 10.2658 15.5551 9.43938C15.3958 8.61299 14.9539 7.86776 14.3052 7.33147C13.6566 6.79518 12.8416 6.50122 12 6.5Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                            <!-- BUBARKAN SYIRKAH ICON -->
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84"
+                                    fill="none">
+                                    <path
+                                        d="M21 77C19.075 77 17.4265 76.314 16.0545 74.942C14.6825 73.57 13.9977 71.9227 14 70V59.5H70V70C70 71.925 69.314 73.5735 67.942 74.9455C66.57 76.3175 64.9227 77.0023 63 77H21ZM45.5 31.5H63L45.5 14V31.5ZM31.5 52.5V45.5H52.5V52.5H31.5ZM59.5 52.5V45.5H80.5V52.5H59.5ZM3.5 52.5V45.5H24.5V52.5H3.5ZM14 38.5V14C14 12.075 14.686 10.4265 16.058 9.05451C17.43 7.68251 19.0773 6.99767 21 7.00001H49L70 28V38.5H14Z"
+                                        fill="#D9B600" />
+                                </svg>
+                            </div>
+                            <!-- DESKRIPSI -->
+                            <p class="align-items-center">Bubarkan Syirkah</p>
+                            <div class="btn mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BUBARKAN SYIRKAH END-->
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- SCRIPT JS -->
+    <script src="../src/js/script.js" type="module"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

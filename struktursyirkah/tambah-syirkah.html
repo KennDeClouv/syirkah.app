@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Syirkah.App | Pilih Syirkah</title>
+
+</head>
+
+<body>
+    <section class="dashboardpage" id="welcomePage">
+        <!-- NAVBAR TOP-->
+        <nav
+            class="navbar navbar-expand p-0 d-flex justify-content-between position-fixed shadow-sm bg-light fixed-top">
+            <div class="m-auto" style="background-color: var(--basic);">
+                <!-- NAV LOGO -->
+                <div class="nav-logo">
+                    <a href="/" class="text-decoration-none">
+                        <p class="m-0 px-3 py-2 pb-4"
+                            style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
+                            S<span class="d-none d-sm-inline"
+                                style="font-family: 'Times New Roman', Times, serif;">yirkah.App</span></p>
+                    </a>
+                </div>
+            </div>
+            <!-- TOP NAVBAR -->
+            <div class="container px-0 px-sm-4 justify-content-end">
+                <div class="link">
+                    <ul class=" navbar-nav gap-md-3 gap-sm-3 gap-3 z-3  align-items-center">
+                        </li>
+                        <!-- NOTIFICATION ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#notification" style="color: var(--dark);"><i
+                                    class="fa-regular fa-bell fa-2x"></i></a>
+                        </li>
+                        <!-- MESSAGE ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#message" style="color: var(--dark);"><i
+                                    class="fa-light fa-comment-dots fa-2x"></i></a>
+                        </li>
+                        <i class="fa-thin fa-pipe fa-2x d-none d-md-flex"></i>
+                        <!-- PROFILE DROPDOWN -->
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Transbara Wahyu Firmansyah
+                                    <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="" class="ms-2" style="width: 50px;">
+                                </button>
+                                <!-- DROPDOWN PROFILE -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <div class="profile text-center px-4">
+                                            <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                alt="" class="" style="width: 200px;">
+                                            <h4 class="mt-3">Transbara Wahyu Firmansyah</h4>
+                                            <hr class="w-75 m-auto" style="border: var(--dark) 2px solid;">
+                                            <p class="text-start mt-4">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptates
+                                                officiis non veniam repudiandae corrupti quam quos quis, odio
+                                                mollitia saepe obcaecati provident est, molestias ipsam error dicta?
+                                                Velit, distinctio! Modi!</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        <div class="maindashboard ms-0">
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="text-center pt-4">Struktur Syirkah</h1>
+                <!-- 1 -->
+                <div class="row my-4 ">
+                    <div class="col">
+                        <form action="" method="post">
+                            <div class="row">
+                                <!--  -->
+                                <div class="col-12 col-md-4">
+                                    <label for="namaSyarikh1" class="form-label">Nama Syarikh 1</label>
+                                    <input type="name" id="namaSyarikh1" class="form-control"
+                                        aria-describedby="namaSyarikh1" placeholder="Nama Syarikh 1">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="peran" class="form-label">Peran</label>
+                                    <select class="form-select form-select" aria-label="peran">
+                                        <option selected>Peran</option>
+                                        <option value="1">Pemodal</option>
+                                        <option value="2">Pengelola</option>
+                                        <option value="3">Pemodal dan Pengelola</option>
+                                    </select>
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="jabatan" class="form-label">Jabatan</label>
+                                    <input type="name" id="jabatan" class="form-control" aria-describedby="jabatan"
+                                        placeholder="Jabatan">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-2">
+                                    <div class="col">
+                                        <label for="namaSyarikh1" class="form-label">Saham</label>
+                                        <input type="name" id="saham" class="form-control"
+                                            aria-describedby="namaSyarikh1" placeholder="Saham">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <form action="" method="post">
+                            <div class="row">
+                                <!--  -->
+                                <div class="col-12 col-md-4">
+                                    <label for="namaSyarikh2" class="form-label">Nama Syarikh 2</label>
+                                    <input type="name" id="namaSyarikh2" class="form-control"
+                                        aria-describedby="namaSyarikh2" placeholder="Nama Syarikh 1">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="peran" class="form-label">Peran</label>
+                                    <select class="form-select form-select" aria-label="peran">
+                                        <option selected>Peran</option>
+                                        <option value="1">Pemodal</option>
+                                        <option value="2">Pengelola</option>
+                                        <option value="3">Pemodal dan Pengelola</option>
+                                    </select>
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="jabatan" class="form-label">Jabatan</label>
+                                    <input type="name" id="jabatan" class="form-control" aria-describedby="jabatan"
+                                        placeholder="Jabatan">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-2">
+                                    <div class="col">
+                                        <label for="namaSyarikh1" class="form-label">Saham</label>
+                                        <input type="name" id="saham" class="form-control"
+                                            aria-describedby="namaSyarikh1" placeholder="Saham">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <form action="" method="post">
+                            <div class="row">
+                                <!--  -->
+                                <div class="col-12 col-md-4">
+                                    <label for="namaSyarikh3" class="form-label">Nama Syarikh 3</label>
+                                    <input type="name" id="namaSyarikh3" class="form-control"
+                                        aria-describedby="namaSyarikh3" placeholder="Nama Syarikh 1">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="peran" class="form-label">Peran</label>
+                                    <select class="form-select form-select" aria-label="peran">
+                                        <option selected>Peran</option>
+                                        <option value="1">Pemodal</option>
+                                        <option value="2">Pengelola</option>
+                                        <option value="3">Pemodal dan Pengelola</option>
+                                    </select>
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-3">
+                                    <label for="jabatan" class="form-label">Jabatan</label>
+                                    <input type="name" id="jabatan" class="form-control" aria-describedby="jabatan"
+                                        placeholder="Jabatan">
+                                </div>
+                                <!--  -->
+                                <div class="col-12 col-md-2">
+                                    <div class="col">
+                                        <label for="namaSyarikh1" class="form-label">Saham</label>
+                                        <input type="name" id="saham" class="form-control"
+                                            aria-describedby="namaSyarikh1" placeholder="Saham">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <div class="btn btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M16.25 2.5H3.75C3.41848 2.5 3.10054 2.6317 2.86612 2.86612C2.6317 3.10054 2.5 3.41848 2.5 3.75V16.25C2.5 16.5815 2.6317 16.8995 2.86612 17.1339C3.10054 17.3683 3.41848 17.5 3.75 17.5H16.25C16.5815 17.5 16.8995 17.3683 17.1339 17.1339C17.3683 16.8995 17.5 16.5815 17.5 16.25V3.75C17.5 3.41848 17.3683 3.10054 17.1339 2.86612C16.8995 2.6317 16.5815 2.5 16.25 2.5ZM14.375 10.625H10.625V14.375C10.625 14.5408 10.5592 14.6997 10.4419 14.8169C10.3247 14.9342 10.1658 15 10 15C9.83424 15 9.67527 14.9342 9.55806 14.8169C9.44085 14.6997 9.375 14.5408 9.375 14.375V10.625H5.625C5.45924 10.625 5.30027 10.5592 5.18306 10.4419C5.06585 10.3247 5 10.1658 5 10C5 9.83424 5.06585 9.67527 5.18306 9.55806C5.30027 9.44085 5.45924 9.375 5.625 9.375H9.375V5.625C9.375 5.45924 9.44085 5.30027 9.55806 5.18306C9.67527 5.06585 9.83424 5 10 5C10.1658 5 10.3247 5.06585 10.4419 5.18306C10.5592 5.30027 10.625 5.45924 10.625 5.625V9.375H14.375C14.5408 9.375 14.6997 9.44085 14.8169 9.55806C14.9342 9.67527 15 9.83424 15 10C15 10.1658 14.9342 10.3247 14.8169 10.4419C14.6997 10.5592 14.5408 10.625 14.375 10.625Z"
+                                fill="white" />
+                        </svg>
+                        Tambah Pensyarikh
+                    </div>
+                </div>
+            </div>
+            <button class="btn m-auto login-button d-flex mt-5 px-4 gap-2 py-2"
+                style="background-color: var(--basic);color: var(--gray);">
+                Selanjutnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M3.33782 7C5.06687 4.01099 8.29859 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C8.29859 22 5.06687 19.989 3.33782 17M12 16L16 12M16 12L12 8M16 12L2 12"
+                        stroke="#D9B600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!-- SCRIPT JS -->
+    <script src="../src/js/script.js" type="module"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

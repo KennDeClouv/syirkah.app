@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--? FONT AWESOME PRO MAX-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- ? FAVICON -->
+    <link rel="shortcut icon"
+        href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        type="image/x-icon">
+    <!-- ? SWIPER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--? AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--? BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--? STYLE -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Syirkah.App | Tambah Akad</title>
+
+</head>
+
+<body>
+    <section class="dashboardpage" id="welcomePage">
+        <!-- NAVBAR TOP-->
+        <nav
+            class="navbar navbar-expand p-0 d-flex justify-content-between position-fixed shadow-sm bg-light fixed-top">
+            <div class="m-auto" style="background-color: var(--basic);">
+                <!-- NAV LOGO -->
+                <div class="nav-logo">
+                    <a href="/" class="text-decoration-none">
+                        <p class="m-0 px-3 py-2 pb-4"
+                            style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
+                            S<span class="d-none d-sm-inline"
+                                style="font-family: 'Times New Roman', Times, serif;">yirkah.App</span></p>
+                    </a>
+                </div>
+            </div>
+            <!-- TOP NAVBAR -->
+            <div class="container px-0 px-sm-4 justify-content-end">
+                <div class="link">
+                    <ul class=" navbar-nav gap-md-3 gap-sm-3 gap-3 z-3  align-items-center">
+                        </li>
+                        <!-- NOTIFICATION ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#notification" style="color: var(--dark);"><i
+                                    class="fa-regular fa-bell fa-2x"></i></a>
+                        </li>
+                        <!-- MESSAGE ICON -->
+                        <li class="nav-item d-none d-md-flex">
+                            <a class="nav-link" href="#message" style="color: var(--dark);"><i
+                                    class="fa-light fa-comment-dots fa-2x"></i></a>
+                        </li>
+                        <i class="fa-thin fa-pipe fa-2x d-none d-md-flex"></i>
+                        <!-- PROFILE DROPDOWN -->
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Transbara Wahyu Firmansyah
+                                    <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="" class="ms-2" style="width: 50px;">
+                                </button>
+                                <!-- DROPDOWN PROFILE -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <div class="profile text-center px-4">
+                                            <img src="https://s3-alpha-sig.figma.com/img/3fdb/991b/2ac6946648ede95a666b2609a6e02ff7?Expires=1699228800&Signature=jRSaf7BkQDrzbsDWU4UfotCSnhxke38i9z6CHYkm979VA0zqwUBYecQdgc9NMoCmRpaG74ylxHxVhvYnC7Nqy9rz8eN2dxQZBeNtcpgnBudN4~5p1G4l6t4ut8M9ersw5Vyt5tt7W8Ehoz82StQSrptYo7HFmGiTaZPjMvkNdf~Q5dvyDPw~DTMkFSIuPWcxeNvpHaMLAVOlwSu~~AWEdDLkGxW-e77rawKdBX5czT4pBKhNsIIKH92YGV5nbohe89iG8zmFENeUD5qqs9KcWiyfYgIQMKaBKEaWiWwGI~D8HeZPaML9legKYtqY6CgOdrJGzcgR3ijKiJlnZyd-cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                                alt="" class="" style="width: 200px;">
+                                            <h4 class="mt-3">Transbara Wahyu Firmansyah</h4>
+                                            <hr class="w-75 m-auto" style="border: var(--dark) 2px solid;">
+                                            <p class="text-start mt-4">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Voluptates
+                                                officiis non veniam repudiandae corrupti quam quos quis, odio
+                                                mollitia saepe obcaecati provident est, molestias ipsam error dicta?
+                                                Velit, distinctio! Modi!</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        <div class="maindashboard ms-0">
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="text-center pt-4">Akad Syirkah</h1>
+                <!-- AKAD SYIRKAH -->
+                <h4>Akad Syirkah</h4>
+                <div class="row my-4">
+                    <label for="namaUsaha" class="col-sm-2 col-form-label">Nama Usaha</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="namaUsaha" placeholder="Nama Usaha">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <label for="jenisSyirkah" class="col-sm-2 col-form-label">Jenis Syirkah</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="jenisSyirkah" placeholder="Jenis Syirkah">
+                    </div>
+                </div>
+                <!-- PIHAK 1 -->
+                <div class="mt-5">
+                    <h4>Pihak 1</h4>
+                    <div class="row my-4">
+                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                        <div class="col-sm-10">
+                            <label class="visually-hidden" for="autoSizingSelect"></label>
+                            <select class="form-select" id="autoSizingSelect">
+                                <option selected>Pilih Peran</option>
+                                <option value="1">Pemodal</option>
+                                <option value="2">Pengelola</option>
+                                <option value="3">Pemodal dan Pengelola</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 1">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                        <div class="col-sm-10">
+                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
+                        <div class="col-sm-10">
+                            <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
+                        </div>
+                    </div>
+                </div>
+                <!-- PIHAK 2 -->
+                <div class="mt-5">
+                    <h4>Pihak 2</h4>
+                    <div class="row my-4">
+                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                        <div class="col-sm-10">
+                            <label class="visually-hidden" for="autoSizingSelect"></label>
+                            <select class="form-select" id="autoSizingSelect">
+                                <option selected>Pilih Peran</option>
+                                <option value="1">Pemodal</option>
+                                <option value="2">Pengelola</option>
+                                <option value="3">Pemodal dan Pengelola</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 2">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                        <div class="col-sm-10">
+                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
+                        <div class="col-sm-10">
+                            <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
+                        </div>
+                    </div>
+                    <!-- TANDA TANGAN -->
+                    <div class="mt-5">
+                        <h4>Tanda Tangan Syirkah</h4>
+                        <div class="row my-4">
+                            <label for="peran" class="col-sm-2 col-form-label">Kota Penandatanganan</label>
+                            <div class="col-sm-10">
+                                <label class="visually-hidden" for="autoSizingSelect"></label>
+                                <select class="form-select" id="autoSizingSelect">
+                                    <option selected>Pilih Kota</option>
+                                    <option value="1">Surabaya</option>
+                                    <option value="2">Malang</option>
+                                    <option value="3">Jakarta</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="tanggal" class="col-sm-2 col-form-label">Waktu Penandatanganan</label>
+                            <div class="col-sm-10 align-items-center d-flex">
+                                <input type="date" class="form-control" id="tanggal">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="saksi1" class="col-sm-2 col-form-label">Saksi Pertama</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="saksi1" placeholder="Nama Saksi 1">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="saksi2" class="col-sm-2 col-form-label">Saksi Kedua</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="saksi2" placeholder="Nama Saksi 2">
+                            </div>
+                        </div>
+                        <!-- PASAL PASAL -->
+                        <div class="pasal1 my-5">
+                            <h2 class="text-center">Pasal 1</h2>
+                            <h3 class="text-center">Ketentuan Umum</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Pihak Pertama adalah selaku pemilik modal (Shahibul Maal) yang telah menyerahkan
+                                        modal kepada pihak kedua untuk dipergunakan menjalankan sebuah usaha.
+                                    </li>
+                                    <li>
+                                        Pihak Kedua adalah selaku pengelola modal (Mudharib) dari pihak pertama, telah
+                                        menerima modal dari pihak pertama untuk usaha sebagaimana disebut pada pasal 1
+                                        Ayat 1 di atas, dengan jumlah modal sebagaimana tercantum dalam pasal 2 ayat 1.
+                                    </li>
+                                    <li>
+                                        Pihak Kedua menerima sejumlah modal dalam bentuk uang tunai dari pihak pertama,
+                                        yang diserahkan pada saat akad ini ditandatangani.1. Kedua pihak akan
+                                        mendapatkan keuntungan dari hasil usaha menurut prosentase keuntungan yang
+                                        disepakati bersama dan menanggung kerugian sebagaimana diatur dalam pasal 4 dan
+                                        pasal 5.
+                                    </li>
+                                    <li>
+                                        Masing-masing pihak memiliki andil dalam usaha ini, pihak pertama berupa modal,
+                                        sedangkan pihak kedua berupa badan. Besar maupun pembahgiannya sebagaimana
+                                        tercantum pada pasal 2 dan pasal 3.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal2 my-5">
+                            <h2 class="text-center">Pasal 2</h2>
+                            <h3 class="text-center">Modal Usaha</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Besarnya uang sebagai modal usaha, sebagaimana disebut pada pasal 1 ayat 1
+                                        adalah sebesar Rp. 1.000.000.000,00 (Satu Milyar Rupiah)
+                                    </li>
+                                    <li>
+                                        Modal tersebut diserahkan pada saat akad ini ditandatangani.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal3 my-5">
+                            <h2 class="text-center">Pasal 3</h2>
+                            <h3 class="text-center">Syarat kepengelolaan Usaha</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Pihak pertama selaku shahibul maal (jika ada syarat yang diajukan) memberikan
+                                        syarat kepada pihak kedua sebagai berikut :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>Pihak kedua hanya boleh menggunakan modal usaha untuk bisnis Properti.
+                                            </li>
+                                            <li> Pengelola tidak boleh mengembangkan propertinya di kawasan yang
+                                                berdekatan dengan sungai.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Pihak kedua harus bekerja secara profesional dan mengelola usaha yang telah
+                                        disepakati, sesuai dengan syarat-syarat yang diajukan oleh pihak pertama.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal4 my-5">
+                            <h2 class="text-center">Pasal 4</h2>
+                            <h3 class="text-center">Keuntungan</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Keuntungan bagi hasil usaha adalah keuntungan bersih (Net Profit), berupa
+                                        keuntungan yang diperoleh dari kegiatan usaha
+                                    </li>
+                                    <li>
+                                        Keuntungan bersih adalah hasil usaha dikurangi pengeluaran usaha bernilai
+                                        positif atau besar modal usaha menjadi bertambah dalam suatu keghiatan usaha,
+                                        dengan ketentuan :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>Net Profit = Total Pendapatan – Total Biaya Langsung – Total Biaya
+                                                Operasional – Total biaya lain-lain.
+                                            </li>
+                                            <li> Impas adalah kegiatan usaha yang tidak memperoleh keuntungan usaha dan
+                                                tidak menderita kerugian usaha.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Keuntungan hasil usaha dibagi menurut kesepakatan, yaitu dengan nisbah :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>
+                                                Pihak Pemodal : 40%
+                                            </li>
+                                            <li>
+                                                Pihak Pengelola : 60%
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal5 my-5">
+                            <h2 class="text-center">Pasal 5</h2>
+                            <h3 class="text-center">Kerugian</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Kerugian usaha adalah hasil usaha dikurangi pengeluaran usaha bernilai
+                                        negatif atau besar modal usaha menjadi berkurang atau musnah dalam suatu
+                                        kegiatan usaha, dengan ketentuan :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>Loss = Total Pendapatan – Total Biaya Langsung – Total Biaya
+                                                Operasional – Total biaya lain-lain
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Apabila terjadi kerugian pada akhir tutup buku, kedua pihak tidak
+                                        mendapatkan apa-apa dari kegiatan usaha.
+                                    </li>
+                                    <li>
+                                        Kerugian pada hakekatnya ditanggung oleh kedua pihak. Sesuai dengan hukum
+                                        islam tentang syirkah mudharabah, tanggungan kerugian adalah sebagai berikut
+                                        :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>
+                                                Kerugian modal usaha karena kondisi bencana alam, politik dan
+                                                ekonomi yang diluar kemampuan pengelola (frost major), sepenuhnya
+                                                ditanggung oleh pemilik modal (shahibul maal), sedangkan kerugian
+                                                badan (tenaga dan waktu pengelola usaha) ditanggung oleh pengelola
+                                                (mudharib)
+                                            </li>
+                                            <li>
+                                                Kerugian modal usaha akibat kelalailan pengelola (kesengajaan) atau
+                                                menyimpang dari syarat yang diajukan pihak pertama, maka akan
+                                                menjadi tanggungan pengelola.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal6 my-5">
+                            <h2 class="text-center">Pasal 6</h2>
+                            <h3 class="text-center">Perhitungan dan Pembagian Untung Rugi</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <li>
+                                        Perhitungan untung rugi dilakukan setiap bulan oleh pihak kedua (mudharib)
+                                    </li>
+                                    <li>
+                                        Hasil perhitungan untung rugi dan laporan keuangan diinformasikan secara
+                                        tertulis kepada pihak pertama.
+                                    </li>
+                                    <li>
+                                        Penyerahan hasil keuntungan sebagaimana pasal 4 ayat 3 dilaksanakan
+                                        selambat-lambatnya 3 hari setelah perhitungan untung rugi dilakukan.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal7 my-5">
+                            <h2 class="text-center">Pasal 7</h2>
+                            <h3 class="text-center">Hak Dan Kewajiban</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Selama jangka waktu bersyirkah pihak pertama :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>
+                                                Berkewajiban untuk tidak mencampuri kebijakan usaha yang sedang
+                                                dijalankan pihak kedua.
+                                            </li>
+                                            <li>
+                                                Berkewajiban untuk tidak melakukan pemaksaan kepada pihak dalam
+                                                kedua dalam usul, saran, ataupun keinginannya dalam menjalankan
+                                                usaha ini.
+                                            </li>
+                                            <li>
+                                                Berkewajiban untuk tidak melakukan kegiatan teknis di tempat usaha
+                                                tanpa seijin dan sepengetahuan pihak kedua.
+                                            </li>
+                                            <li>
+                                                Berkewajiban untuk tidak mengambil modal usaha sampai batas akhir
+                                                perjanjian , kecuali dalam keadaan istimewa karena kelalaian pihak
+                                                kedua.
+                                            </li>
+                                            <li>
+                                                Berhak untuk melaukan kontrol atau meninjau tempat kegiatan usaha
+                                                dengan disertai pihak kedua.
+                                            </li>
+                                            <li>
+                                                Berhak mengajukan usul dan saran kepada pihak kedua untuk
+                                                memperbaiki dan atau menyempurnakan kegiatan usaha yang sedang
+                                                berjalan.
+                                            </li>
+                                            <li>
+                                                Berhak membatalkan perjanjian dan atau mengambil kembali sebagian
+                                                atau seluruh modal usaha dari pihak kedua setelah terbukti pihak
+                                                kedua melakukan penyelewengan dan atau mengkhianati isi akad
+                                                syirkah.
+                                            </li>
+                                        </ol>
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Selama jangka waktu bersyirkah, pihak kedua:
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>
+                                                Berkewajiban mengelola modal usaha yang telah diterima dari pihak
+                                                pertama untuk suatu kegiatan usaha yang telah ditetapkan secara
+                                                amanah kafa’ah himmatul ‘amal.
+                                            </li>
+                                            <li>
+                                                Berkewajiban melaporkan hasil usaha secara rinci.
+                                            </li>
+                                            <li>
+                                                Berkewajiban secara serius dan terencana untuk mencapai target yang
+                                                telah disebutkan dalam proposal kerjasama.
+                                            </li>
+                                            <li>
+                                                Berhak menggunakan modal usaha dalam kegiatan usaha yang telah
+                                                disepakati oleh kedua pihak.
+                                            </li>
+                                            <li>
+                                                Berhak mengelola dan menentukan kebijakan-kebijakan dalam kegiatan
+                                                usaha.
+                                            </li>
+                                            <li>
+                                                Berhak melaksanakan usul, saran ataupun keinginan pihak pertama.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal8 my-5">
+                            <h2 class="text-center">Pasal 8</h2>
+                            <h3 class="text-center">Kelalaian Dan Sanksi</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Kelalaian adalah suatu tindakan secara sengaja tidak melaksanakan
+                                        kewajiban-kewajiban sebagaimana tercantum dalam pasal 7 yang dilakukan oleh
+                                        pihak kedua.
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Sanksi diberikan oleh pihak pertama kepada pihak kedua apabila terjadi kelalaian
+                                        sebagaimana tercantum pada pasal 7 ayat 2.
+                                    </li><br>
+                                    <li>
+                                        Bentuk sanksi yang diberikan berupa :
+                                        <ol style="list-style: lower-alpha;">
+                                            <li>
+                                                Teguran lisan.
+                                            </li>
+                                            <li>
+                                                Teguran tertulis
+                                            </li>
+                                            <li>
+                                                Pembatalan akad syirkah oleh pihak pertama dengan kewajiban bagi pihak
+                                                kedua untuk mengembalikan seluruh modal usaha yang lebih disepakati.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal9 my-5">
+                            <h2 class="text-center">Pasal 9</h2>
+                            <h3 class="text-center">Berakhirnya Syirkah</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Syirkah dikatakan berakhir, jika para pihak bersepakat untuk membubarkan
+                                        syirkah.
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Syirkah juga dapat berakhir, jika ada pelanggaran sebagaimana tercantum pada
+                                        pasal 7 ayat 2.
+                                    </li><br>
+                                    <li>
+                                        Apabila para pihak bersepakat untuk membubarkan syirkah ini, sebagaimana
+                                        ketentuan yang tercantum pada Pasal 9 ayat 1 di atas, maka pembagian harta
+                                        syirkah ini akan diatur pada pasal 10.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal10 my-5">
+                            <h2 class="text-center">Pasal 10</h2>
+                            <h3 class="text-center">Pembagian Harta Usaha</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Pembagian harta usaha terjadi ketika para pihak bersepakat untuk membubarkan
+                                        syirkah ini.
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Harta usaha yang dimaksud adalah seluruh harta yang dighunakan untuk menjalankan
+                                        usaha dengan syirkah ini, termasuk di dalamnya asset tidak bergerak, asset
+                                        bergerak, piutang usaha lancar dan dana kas usaha.
+                                    </li><br>
+                                    <li>
+                                        Harta usaha yang dibagikan harus terbebas dari seluruh utang usaha. Artinya,
+                                        harta usaha yang dibagikan adalah setelah dikurangi seluruh utang usaha.
+                                    </li><br>
+                                    <li>
+                                        Pembagian harta usaha mengikuti aturan syirkah mudharabah yaitu, jika terjadi
+                                        kerugian maka menjadi tanggungan shahibul maal. Apabila terjadi keuntungan maka
+                                        modal dikembalikan kepada shahibul maal sedangkan keuntungannya tersebut dibagi
+                                        berdasarkan aturan pembagian keuntungan yang telah disepakati, sebagaimana
+                                        tercantum pada Pasal 4 ayat 3.
+                                    </li><br>
+                                    <li>
+                                        Kerugian harta usaha adalah nilai total harta usaha yang tersisa lebih kecil
+                                        dari jumlah total modal awal yang diberikan oleh shahibul maal sesuai pasal 2.
+                                    </li><br>
+                                    <li>
+                                        Keuntungan harta usaha adalah selisih positif dari jumlah harta usaha dikurangi
+                                        dengan modal awal usaha.
+                                    </li><br>
+                                    <li>
+                                        Apabila ada asset atau barang-barang usaha syirkah akan dijual, maka pesyirkah
+                                        memiliki hak untuk penawaran penjualan terlebih dahulu.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal11 my-5">
+                            <h2 class="text-center">Pasal 11</h2>
+                            <h3 class="text-center">Penyelesaian Perselisihan</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Apabila terjadi perselisihan diantara para musyarik sehubungan dengan akad
+                                        syirkah ini, para pihak bersepakat menyelesaikan dengan musyawarah dan
+                                        mengedepankan hubungan ukhuwah (persaudaraan)
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Segala sesuatu yang merupakan hasil penyelesaian musyawarah akan dituangkan
+                                        dalam perjanjian sendiri.
+                                    </li><br>
+                                    <li>
+                                        Jika kata putus tidak diperoleh berdasarkan hasil musyawarah, maka perselisihan
+                                        dapat diajukan kehadapan hakim (qadhi) negara dalam hal ini adalah Hakim
+                                        Pengadilan Agama sesuai syariat islam.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pasal12 my-5">
+                            <h2 class="text-center">Pasal 12</h2>
+                            <h3 class="text-center">Lain-lain</h3>
+                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                <ol class="pb-5 mb-5">
+                                    <!-- 1 -->
+                                    <li>
+                                        Akad ini mengikat secara hukum syariat kepada kedua pihak.
+                                    </li><br>
+                                    <!-- 2 -->
+                                    <li>
+                                        Surat akad ini dibuat rangkap dua dan seluruhnya ditantangani oleh kedua pihak
+                                        pada hari dan tanggal di muka.
+                                    </li><br>
+                                </ol>
+                            </div>
+                        </div>
+                        <button class="btn m-auto login-button d-flex my-5 px-5 gap-2 py-2"
+                            style="background-color: var(--basic);color: var(--gray);">
+                            Selanjutnya
+                        </button>
+                    </div>
+    </section>
+    <!-- SCRIPT JS -->
+    <script src="../src/js/script.js" type="module"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

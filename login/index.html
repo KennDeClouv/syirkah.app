@@ -28,47 +28,48 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--? STYLE -->
     <link rel="stylesheet" href="../src/css/style.css">
-    <title>Syirkah.App</title>
+    <title>Syirkah.App | Masuk</title>
 
 </head>
 
 <body class="overflow-x-hidden">
     <section class="loginpage" id="loginPage">
         <div class="background p-5 pt-4">
-            <div class="login-title">
-                <p class="fs-1" style="color: var(--gold);">Syirkah.App</p>
-                <hr style="border: var(--gold) 3px solid;opacity: 1;border-radius: 100px;width: 180px;">
-                <p class="fs-5" style="color: var(--gray);"><i>“Asisten bisnis anda agar tetap berkah <br>melimpah dan
-                        mudah.”</i></p>
-            </div>
+
         </div>
-        <div class="container-lg p-4 d-flex align-items-end pb-0 min-vh-100">
+        <div class="container-lg p-4 d-flex align-items-end pb-0 min-vh-100 justify-content-center">
             <div class="row h-100 ">
-                <div class="col-6 d-flex" class="">
+                <div class="col-12 col-lg-6" class="">
+                    <div class="login-title">
+                        <p class="fs-1" style="color: var(--gold);">Syirkah.App</p>
+                        <hr style="border: var(--gold) 3px solid;opacity: 1;border-radius: 100px;width: 180px;">
+                        <p class="fs-5" style="color: var(--gray);"><i>“Asisten bisnis anda agar tetap berkah <br>melimpah dan
+                                mudah.”</i></p>
+                    </div>
                     <img src="https://s3-alpha-sig.figma.com/img/b41b/f50c/e04e5483987c80fead49f58a5da81d8c?Expires=1699228800&Signature=T-Tw8wzVF2htbfo267cI47VgZB8GPptIe7RDt-W4ne8ymuIRaA0xWi4tkre0kKJcSuGIHSv5vT9NpMHvc5BCGTEfOFDXdu0XoQbNMkbAZggmi0fc7kkkjWlvDP6rxAuSZxKkOmIxF4j0cGc3bMzeKLOVclIVICnwZuK5HQQ8WQWSZXs5fbK28ZxEp8nNbsib6Ab94T~xkA6PcGVXKG7zz2A1Cvdzo9Svl-Y~tZhZDWO3o7IuTJqlPufBacTGMLkEhZK6p-4Aw6EkfbFajny~-EOSawhxeYaAslXyPi2Ow5mDhYBRupcBZlbbRnNRdAXoOipE5E7auKH-gGSBNewtTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" class="w-50 mt-auto">
+                        alt="" class="w-50 mt-auto d-lg-block d-none">
                 </div>
-                <div class="col-6 h-100">
-                    <div class="loginform rounded-5 p-4 pb-5 mb-5">
+                <div class="col-12 col-lg-6 m-auto">
+                    <div class="loginform rounded-5 p-4 pb-5 mb-5 h-auto">
                         <h1 class=" text-center">Masuk</h1>
                         <form>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                    aria-describedby="emailHelp" placeholder="email">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="exampleInputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label d-flex justify-content-between" for="exampleCheck1">Tampilkan password
-                                    <a href="/" >Lupa Password</a>
+                                    <a href="/login/forgetpassword.html" >Lupa Password</a>
                                 </label>
                             </div>
                             <button type="submit" class="btn login-button btn w-100 mt-4">Masuk</button>
-                            <p class="text-end mt-3">Saya belum memiliki akun. <a href="/">Daftar Disini.</a></p>
+                            <p class="text-end mt-3">Saya belum memiliki akun. <a href="/login/register.html">Daftar Disini.</a></p>
                         </form>
                     </div>
                 </div>
