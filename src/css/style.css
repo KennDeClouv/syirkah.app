@@ -18,6 +18,10 @@
 -----------------------------------------------*/
 
 .nav-link:hover {
+	color: var(--gold);
+	opacity: 0.75;
+}
+.nav-p:hover {
 	color: var(--basic) !important;
 	opacity: 0.75;
 }
@@ -225,7 +229,7 @@ WELCOME PAGE SETTINGS
 }
 
 .welcome-form {
-	width: 646px;
+	width: 80%;
 	background: rgba(255, 255, 255, 0.8);
 	border-radius: 25px;
 	backdrop-filter: blur(2px);

@@ -96,7 +96,7 @@
                     style="background-color: var(--basic);height: 100vh;z-index: 1030;top: 0;">
                     <!-- NAV LOGO -->
                     <div class="nav-logo">
-                        <a href="/" class="text-decoration-none">
+                        <a href="/dashboard/" class="text-decoration-none">
                             <p class="m-0 px-3 py-2 pb-4"
                                 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: var(--gold);">
                                 S<span class="d-none d-sm-inline"
@@ -105,19 +105,19 @@
                     </div>
                     <!-- DASHBOARD MENU -->
                     <div class="nav-item d-flex">
-                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-rectangles-mixed"
+                        <a href="/dashboard/" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-rectangles-mixed"
                                 style="color: var(--gold);"></i><span
                                 class="d-none d-sm-inline ms-2"><b>Dashboard</b></span></a>
                     </div>
                     <!-- PANDUAN SYIRKAH MENU -->
                     <div class="nav-item d-flex">
-                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-book"
+                        <a href="/panduan/" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-book"
                                 style="color: var(--gold);"></i>
                             <span class="d-none d-sm-inline  ms-2">Panduan Syirkah</span></a>
                     </div>
                     <!-- KONSULTASI MENU -->
                     <div class="nav-item d-flex">
-                        <a href="#" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-comment-lines"
+                        <a href="/konsultasi/" class="nav-link m-auto m-sm-0"><i class="fa-solid fa-comment-lines"
                                 style="color: var(--gold);"></i>
                             <span class="d-none d-sm-inline  ms-2">Konsultasi</span></a>
                     </div>
@@ -138,14 +138,14 @@
                     </div>
                     <!-- TAMBAH SYIRKAH -->
                     <div class="d-flex  rounded-3 px- mt-3 ms-sm-2 ms-1">
-                        <a href="#" class="btn py-1 px-md-1 text-decoration-none"
+                        <a href="/welcome/alursyirkah.html" class="btn py-1 px-md-1 text-decoration-none"
                             style="background-color: var(--gold);"><i
                                 class="fa-solid fa-square-plus me-md-3 ms-sm-2"></i>
                             <span class="d-none d-sm-inline">Tambah syirkah</span></a>
                     </div>
                     <!-- UPGRADE ACCOUNT -->
                     <div class="nav-item d-flex mt-auto mb-3">
-                        <a href="#" class=" m-auto text-decoration-none" style="color: var(--gold);">
+                        <a href="/pricelit/" class=" m-auto text-decoration-none" style="color: var(--gold);">
                             <span class="d-none d-sm-inline">Upgrade Account</span></a>
                     </div>
                 </div>
@@ -187,11 +187,11 @@
                                         aria-label="Disabled input example" disabled readonly>
                                 </div>
                                 <div class="mt-auto">
-                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat
+                                    <a href="/konsultasi/mulai.html" class="text-decoration-none" style="color: var(--basic);">Riwayat
                                         Konsultasi</a><br>
-                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat Tutup
+                                    <a href="/tutupbuku/riwayat.html" class="text-decoration-none" style="color: var(--basic);">Riwayat Tutup
                                         Buku</a><br>
-                                    <a href="/" class="text-decoration-none" style="color: var(--basic);">Riwayat
+                                    <a href="/pergantianpengelola/" class="text-decoration-none" style="color: var(--basic);">Riwayat
                                         Pergantian Pengelola</a><br>
                                 </div>
                             </form>
@@ -223,11 +223,14 @@
                             </div>
                             <!-- DESKRIPSI -->
                             <p>Struktur perusahaan</p>
-                            <div class="btn mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
-                            </div>
+                            <a href="/struktursyirkah/">
+                                <div class="btn mt-auto w-100" style="background-color: var(--basic);color: var(--gray);">Detail
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <!-- STRUKTUR PERUSAHAAN END-->
+
                     <!-- AKAD PENSYIRKAH -->
                     <div class="col">
                         <div class="menu py-2">
@@ -251,11 +254,14 @@
                             </div>
                             <!-- DESKRIPSI -->
                             <p class="mt-2">Akad Persyirkah</p>
-                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
-                            </div>
+                            <a href="/struktursyirkah/datatable-akad-syirkah.html" class="mt-auto">
+                                <div class="btn w-100" style="background-color: var(--basic);color: var(--gray);">Detail
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <!-- STRUKTUR PERUSAHAAN END-->
+
                     <!-- AKAD KETENAGAKERJAAN -->
                     <div class="col">
                         <div class="menu py-2">
@@ -282,8 +288,10 @@
                             </div>
                             <!-- DESKRIPSI -->
                             <p class="">Akad Ketenagakerjaan</p>
-                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
-                            </div>
+                            <a href="/struktursyirkah/datatable-akad-ketenagakerjaan.html" class="mt-auto">
+                                <div class="btn w-100" style="background-color: var(--basic);color: var(--gray);">Detail
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <!-- AKAD KETENAGAKERJAAN END-->
@@ -310,11 +318,14 @@
                             </div>
                             <!-- DESKRIPSI -->
                             <p>Laporan Keuangan</p>
-                            <div class="btn  mt-auto" style="background-color: var(--basic);color: var(--gray);">Detail
-                            </div>
+                            <a href="/laporankeuangan/" class="mt-auto">
+                                <div class="btn w-100" style="background-color: var(--basic);color: var(--gray);">Detail
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <!-- LAPORAN KEUANGAN END-->
+
                     <!-- BUBARKAN SYIRKAH -->
                     <div class="col">
                         <div class="menu py-2">

@@ -102,129 +102,132 @@
                 <!-- TITLE -->
                 <h1 class="text-center pt-4">Akad Syirkah</h1>
                 <!-- AKAD SYIRKAH -->
-                <h4>Akad Syirkah</h4>
-                <div class="row my-4">
-                    <label for="namaUsaha" class="col-sm-2 col-form-label">Nama Usaha</label>
-                    <div class="col-sm-10">
-                        <input type="name" class="form-control" id="namaUsaha" placeholder="Nama Usaha">
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <label for="jenisSyirkah" class="col-sm-2 col-form-label">Jenis Syirkah</label>
-                    <div class="col-sm-10">
-                        <input type="name" class="form-control" id="jenisSyirkah" placeholder="Jenis Syirkah">
-                    </div>
-                </div>
-                <!-- PIHAK 1 -->
-                <div class="mt-5">
-                    <h4>Pihak 1</h4>
+                <form action="/struktursyirkah/tambah-akad-ketenagakerjaan.html">
+
+                    <h4>Akad Syirkah</h4>
                     <div class="row my-4">
-                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                        <label for="namaUsaha" class="col-sm-2 col-form-label">Nama Usaha</label>
                         <div class="col-sm-10">
-                            <label class="visually-hidden" for="autoSizingSelect"></label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Pilih Peran</option>
-                                <option value="1">Pemodal</option>
-                                <option value="2">Pengelola</option>
-                                <option value="3">Pemodal dan Pengelola</option>
-                            </select>
+                            <input type="name" class="form-control" id="namaUsaha" placeholder="Nama Usaha">
                         </div>
                     </div>
                     <div class="row my-4">
-                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                        <label for="jenisSyirkah" class="col-sm-2 col-form-label">Jenis Syirkah</label>
                         <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 1">
+                            <input type="name" class="form-control" id="jenisSyirkah" placeholder="Jenis Syirkah">
                         </div>
                     </div>
-                    <div class="row my-4">
-                        <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
-                        </div>
-                    </div>
-                </div>
-                <!-- PIHAK 2 -->
-                <div class="mt-5">
-                    <h4>Pihak 2</h4>
-                    <div class="row my-4">
-                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
-                        <div class="col-sm-10">
-                            <label class="visually-hidden" for="autoSizingSelect"></label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Pilih Peran</option>
-                                <option value="1">Pemodal</option>
-                                <option value="2">Pengelola</option>
-                                <option value="3">Pemodal dan Pengelola</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 2">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
-                        </div>
-                    </div>
-                    <!-- TANDA TANGAN -->
+                    <!-- PIHAK 1 -->
                     <div class="mt-5">
-                        <h4>Tanda Tangan Syirkah</h4>
+                        <h4>Pihak 1</h4>
                         <div class="row my-4">
-                            <label for="peran" class="col-sm-2 col-form-label">Kota Penandatanganan</label>
+                            <label for="peran" class="col-sm-2 col-form-label">Peran</label>
                             <div class="col-sm-10">
                                 <label class="visually-hidden" for="autoSizingSelect"></label>
                                 <select class="form-select" id="autoSizingSelect">
-                                    <option selected>Pilih Kota</option>
-                                    <option value="1">Surabaya</option>
-                                    <option value="2">Malang</option>
-                                    <option value="3">Jakarta</option>
+                                    <option selected>Pilih Peran</option>
+                                    <option value="1">Pemodal</option>
+                                    <option value="2">Pengelola</option>
+                                    <option value="3">Pemodal dan Pengelola</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row my-4">
-                            <label for="tanggal" class="col-sm-2 col-form-label">Waktu Penandatanganan</label>
-                            <div class="col-sm-10 align-items-center d-flex">
-                                <input type="date" class="form-control" id="tanggal">
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 1">
                             </div>
                         </div>
                         <div class="row my-4">
-                            <label for="saksi1" class="col-sm-2 col-form-label">Saksi Pertama</label>
+                            <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
                             <div class="col-sm-10">
-                                <input type="name" class="form-control" id="saksi1" placeholder="Nama Saksi 1">
+                                <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
                             </div>
                         </div>
                         <div class="row my-4">
-                            <label for="saksi2" class="col-sm-2 col-form-label">Saksi Kedua</label>
+                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                             <div class="col-sm-10">
-                                <input type="name" class="form-control" id="saksi2" placeholder="Nama Saksi 2">
+                                <input type="address" class="form-control" id="alamat" placeholder="Alamat">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PIHAK 2 -->
+                    <div class="mt-5">
+                        <h4>Pihak 2</h4>
+                        <div class="row my-4">
+                            <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                            <div class="col-sm-10">
+                                <label class="visually-hidden" for="autoSizingSelect"></label>
+                                <select class="form-select" id="autoSizingSelect">
+                                    <option selected>Pilih Peran</option>
+                                    <option value="1">Pemodal</option>
+                                    <option value="2">Pengelola</option>
+                                    <option value="3">Pemodal dan Pengelola</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 2">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Alamat">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
+                            </div>
+                        </div>
+                        <!-- TANDA TANGAN -->
+                        <div class="mt-5">
+                            <h4>Tanda Tangan Syirkah</h4>
+                            <div class="row my-4">
+                                <label for="peran" class="col-sm-2 col-form-label">Kota Penandatanganan</label>
+                                <div class="col-sm-10">
+                                    <label class="visually-hidden" for="autoSizingSelect"></label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Pilih Kota</option>
+                                        <option value="1">Surabaya</option>
+                                        <option value="2">Malang</option>
+                                        <option value="3">Jakarta</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="tanggal" class="col-sm-2 col-form-label">Waktu Penandatanganan</label>
+                                <div class="col-sm-10 align-items-center d-flex">
+                                    <input type="date" class="form-control" id="tanggal">
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="saksi1" class="col-sm-2 col-form-label">Saksi Pertama</label>
+                                <div class="col-sm-10">
+                                    <input type="name" class="form-control" id="saksi1" placeholder="Nama Saksi 1">
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="saksi2" class="col-sm-2 col-form-label">Saksi Kedua</label>
+                                <div class="col-sm-10">
+                                    <input type="name" class="form-control" id="saksi2" placeholder="Nama Saksi 2">
+                                </div>
                             </div>
                         </div>
                         <!-- PASAL PASAL -->
@@ -605,11 +608,14 @@
                                 </ol>
                             </div>
                         </div>
-                        <button class="btn m-auto login-button d-flex my-5 px-5 gap-2 py-2"
+                    </div>
+                        <button class="btn m-auto login-button d-flex my-5 px-5 gap-2 py-2" type="submit"
                             style="background-color: var(--basic);color: var(--gray);">
                             Selanjutnya
                         </button>
-                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     <!-- SCRIPT JS -->
     <script src="../src/js/script.js" type="module"></script>

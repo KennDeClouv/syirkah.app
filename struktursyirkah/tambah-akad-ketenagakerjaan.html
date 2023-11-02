@@ -102,52 +102,20 @@
                 <!-- TITLE -->
                 <h1 class="text-center pt-4">Akad Ketenagakerjaan</h1>
                 <!-- AKAD SYIRKAH -->
-                <h4>Akad Ketenagakerjaan</h4>
-                <div class="row my-4">
-                    <label for="namaUsaha" class="col-sm-2 col-form-label">Nama Usaha</label>
-                    <div class="col-sm-10">
-                        <input type="name" class="form-control" id="namaUsaha" placeholder="Nama Usaha">
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <label for="peran" class="col-sm-2 col-form-label">Jenis Kontrak</label>
-                    <div class="col-sm-10">
-                        <label class="visually-hidden" for="autoSizingSelect"></label>
-                        <select class="form-select" id="autoSizingSelect">
-                            <option selected>Pilih Kontrak</option>
-                            <option value="1">Pemodal</option>
-                            <option value="2">Pengelola</option>
-                            <option value="3">Pemodal dan Pengelola</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <label for="jenisSyirkah" class="col-sm-2 col-form-label">Posisi</label>
-                    <div class="col-sm-10">
-                        <input type="name" class="form-control" id="jenisSyirkah" placeholder="Masukkan Posisi">
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <label for="peran" class="col-sm-2 col-form-label">Jangka Waktu</label>
-                    <div class="col-sm-10">
-                        <label class="visually-hidden" for="autoSizingSelect"></label>
-                        <select class="form-select" id="autoSizingSelect">
-                            <option selected>1 Bulan</option>
-                            <option value="1">3 Bulan</option>
-                            <option value="2">6 Bulan</option>
-                            <option value="3">12 Bulan</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- PIHAK 1 -->
-                <div class="mt-5">
-                    <h4>Pihak 1</h4>
+                <form action="/struktursyirkah/print-akad-syirkah.html">
+                    <h4>Akad Ketenagakerjaan</h4>
                     <div class="row my-4">
-                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                        <label for="namaUsaha" class="col-sm-2 col-form-label">Nama Usaha</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="namaUsaha" placeholder="Nama Usaha">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="peran" class="col-sm-2 col-form-label">Jenis Kontrak</label>
                         <div class="col-sm-10">
                             <label class="visually-hidden" for="autoSizingSelect"></label>
                             <select class="form-select" id="autoSizingSelect">
-                                <option selected>Pilih Peran</option>
+                                <option selected>Pilih Kontrak</option>
                                 <option value="1">Pemodal</option>
                                 <option value="2">Pengelola</option>
                                 <option value="3">Pemodal dan Pengelola</option>
@@ -155,244 +123,281 @@
                         </div>
                     </div>
                     <div class="row my-4">
-                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                        <label for="jenisSyirkah" class="col-sm-2 col-form-label">Posisi</label>
                         <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 1">
+                            <input type="name" class="form-control" id="jenisSyirkah" placeholder="Masukkan Posisi">
                         </div>
                     </div>
                     <div class="row my-4">
-                        <label for="nomorKTP" class="col-sm-2 col-form-label">Jabatan</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
-                        </div>
-                    </div>
-                </div>
-                <!-- PIHAK 2 -->
-                <div class="mt-5">
-                    <h4>Pihak 2</h4>
-                    <div class="row my-4">
-                        <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                        <label for="peran" class="col-sm-2 col-form-label">Jangka Waktu</label>
                         <div class="col-sm-10">
                             <label class="visually-hidden" for="autoSizingSelect"></label>
                             <select class="form-select" id="autoSizingSelect">
-                                <option selected>Pilih Peran</option>
-                                <option value="1">Pemodal</option>
-                                <option value="2">Pengelola</option>
-                                <option value="3">Pemodal dan Pengelola</option>
+                                <option selected>1 Bulan</option>
+                                <option value="1">3 Bulan</option>
+                                <option value="2">6 Bulan</option>
+                                <option value="3">12 Bulan</option>
                             </select>
                         </div>
                     </div>
-                    <div class="row my-4">
-                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 2">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Alamat">
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
-                        <div class="col-sm-10">
-                            <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
-                        </div>
-                    </div>
-                    <!-- TANDA TANGAN -->
+                    <!-- PIHAK 1 -->
                     <div class="mt-5">
-                        <h4>Tanda Tangan Syirkah</h4>
+                        <h4>Pihak 1</h4>
                         <div class="row my-4">
-                            <label for="peran" class="col-sm-2 col-form-label">Kota Penandatanganan</label>
+                            <label for="peran" class="col-sm-2 col-form-label">Peran</label>
                             <div class="col-sm-10">
                                 <label class="visually-hidden" for="autoSizingSelect"></label>
                                 <select class="form-select" id="autoSizingSelect">
-                                    <option selected>Pilih Kota</option>
-                                    <option value="1">Surabaya</option>
-                                    <option value="2">Malang</option>
-                                    <option value="3">Jakarta</option>
+                                    <option selected>Pilih Peran</option>
+                                    <option value="1">Pemodal</option>
+                                    <option value="2">Pengelola</option>
+                                    <option value="3">Pemodal dan Pengelola</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row my-4">
-                            <label for="tanggal" class="col-sm-2 col-form-label">Waktu Penandatanganan</label>
-                            <div class="col-sm-10 align-items-center d-flex">
-                                <input type="date" class="form-control" id="tanggal">
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 1">
                             </div>
                         </div>
-                        <!-- PASAL PASAL -->
-                        <div class="pasal1 my-5">
-                            <h2 class="text-center">Pasal 1</h2>
-                            <h3 class="text-center">Jenis Pekarjaan (Nau'ul A'mal)</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Objek Pekerjaan dalam perjanjian ini adalah pengerjaan proyek aplikasi catfish
-                                        autodetail app.
-                                    </li>
-                                    <li>
-                                        Pihak Pertama menerima Pihak Kedua sebagai Tenaga kerja proyek dan Pihak Kedua
-                                        menyatakan kesediaannya untuk mengerjakan proyek yang diberikan oleh Pihak
-                                        Pertama di Syabab Studio.
-                                    </li>
-                                </ol>
+                        <div class="row my-4">
+                            <label for="nomorKTP" class="col-sm-2 col-form-label">Jabatan</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
                             </div>
                         </div>
-                        <div class="pasal2 my-5">
-                            <h2 class="text-center">Pasal 2</h2>
-                            <h3 class="text-center">Jangka Waktu Kerja (Muddatul 'Amal)</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Pihak Pertama bersedia menerima Pihak Kedua untuk Kerja di Syabab Studio untuk
-                                        jangka waktu selama 1 (satu) bulan terhitung sejak tanggal 01 – 01 – 2023 sampai
-                                        tanggal 30 – 01 - 2023
-                                    </li>
-                                    <li>
-                                        Kerja dilaksanakan setiap hari, yaitu hari Senin sampai dengan Ahad. Jam kerja
-                                        dilaksanakan selama 6 jam setiap harinya. Pagi 08.00 - 14.00 WIB atau Sore 15.00
-                                        - 21.00 WIB
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal3 my-5">
-                            <h2 class="text-center">Pasal 3</h2>
-                            <h3 class="text-center">Tenaga Yang dicurahkan (Juhdul 'Amal)</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Pihak Kedua bersedia menjadi Fullstack Web Developer.
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal4 my-5">
-                            <h2 class="text-center">Pasal 4</h2>
-                            <h3 class="text-center">Hak dan Kewajiban Kedua Belah Pihak</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Pihak Pertama mempunyai hak-hak sebagai berikut :
-                                        <ol style="list-style: lower-alpha;">
-                                            <li>Memiliki hasil pekerjaan proyek yang sedang dikerjakan.
-                                            </li>
-                                            <li> Menegur dan memberhentikan Pihak Kedua jika melakukan pelanggaran
-                                                sesuai dengan ketentuan yang tercantum didalam pelanggaran Tata Tertib
-                                                Kerja.</li>
-                                        </ol>
-                                    </li><br>
-                                    <li>
-                                        Pihak Pertama mempunyai Kewajiban-Kewajiban sebagai berikut :
-                                        <ol style="list-style: lower-alpha;">
-                                            <li>
-                                                Memberikan hak-hak Pihak Kedua sesuai dengan pasal 5
-                                            </li>
-                                            <li>
-                                                Melaksanakan kerja untuk Pihak Kedua hingga selesai.
-                                            </li>
-                                            <li>
-                                                Memberikan pembinaan dan pengarahan kepada Pihak Kedua.
-                                            </li>
-                                            <li>
-                                                Melakukan evaluasi secara berkala tentang perkembangan Pihak Kedua dalam
-                                                hal pelaksanaan kerja.
-                                            </li>
-                                        </ol>
-                                    </li><br>
-                                    <li>
-                                        Pihak Kedua mempunyai kewajiban sebagai berikut :
-                                        <ol style="list-style: lower-alpha;">
-                                            <li>
-                                                Melaksanakan kerja hingga masa kerja selesai.
-                                            </li>
-                                            <li>
-                                                Mematuhi seluruh ketentuan yang diatur dalam Pelanggaran Tata Tertib
-                                                Kerja.
-                                            </li>
-                                            <li>
-                                                Mentaati segala instruksi dari pimpinan dan pembuat kerja.
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal5 my-5">
-                            <h2 class="text-center">Pasal 5</h2>
-                            <h3 class="text-center">Upah Kerja (Ujratul 'Amal)</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Pihak Kedua mendapatkan upah selama masa kerja sebesar Rp. 1.500.000,00 (Satu
-                                        juta lima ratus ribu rupiah).
-                                    </li>
-                                    <li>
-                                        Pihak Kedua mendapatkan tambahan upah sebesar Rp. 500.000,00 (Lima ratus ribu
-                                        rupiah) jika bisa menyelesaikan pekerjaan sebelum tanggal 15 Januari 2023.
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal6 my-5">
-                            <h2 class="text-center">Pasal 6</h2>
-                            <h3 class="text-center">Penyelesaian Perselisihan</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <li>
-                                        Bilamana terjadi perselisihan antara kedua belah pihak maka akan diselesaikan
-                                        secara musyawarah untuk mufakat, dan bilamana tidak tercapai kata mufakat maka
-                                        dilanjutkan sesuai ketentuan Perselisihan Perburuhan.
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal7 my-5">
-                            <h2 class="text-center">Pasal 7</h2>
-                            <h3 class="text-center">Berakhirnya Perjanjian</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <!-- 1 -->
-                                    <li>
-                                        Bilamana Pihak Kedua melanggar ketentuan yang berlaku di perusahaan Pihak
-                                        Pertama, maka Pihak Pertama setiap saat dapat mengakhiri perjanjian kontrak
-                                        kerja tanpa berkewajiban memberikan ganti rugi dalam bentuk apapun.
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="pasal8 my-5">
-                            <h2 class="text-center">Pasal 8</h2>
-                            <h3 class="text-center">Penutup</h3>
-                            <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
-                                <ol class="pb-5 mb-5">
-                                    <!-- 1 -->
-                                    <li>
-                                        Perjanjian kerja ini dibuat dan ditandatangani oleh Para Pihak dalam keadaan
-                                        sadar tanpa paksaan dari siapapun juga, serta berlaku sejak tanggal
-                                        ditandatangani , dan berakhir setelah selesainya program kerja.
-                                    </li>
-                                </ol>
+                        <div class="row my-4">
+                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Alamat">
                             </div>
                         </div>
                     </div>
-                    <button class="btn m-auto login-button d-flex my-5 px-5 gap-2 py-2"
-                        style="background-color: var(--basic);color: var(--gray);">
-                        Selanjutnya
-                    </button>
+                    <!-- PIHAK 2 -->
+                    <div class="mt-5">
+                        <h4>Pihak 2</h4>
+                        <div class="row my-4">
+                            <label for="peran" class="col-sm-2 col-form-label">Peran</label>
+                            <div class="col-sm-10">
+                                <label class="visually-hidden" for="autoSizingSelect"></label>
+                                <select class="form-select" id="autoSizingSelect">
+                                    <option selected>Pilih Peran</option>
+                                    <option value="1">Pemodal</option>
+                                    <option value="2">Pengelola</option>
+                                    <option value="3">Pemodal dan Pengelola</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nama" placeholder="Nama Syarikh 2">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="nomorKTP" class="col-sm-2 col-form-label">Nomor KTP</label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control" id="nomorKTP" placeholder="Nomor KTP">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Alamat">
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <label for="ttl" class="col-sm-2 col-form-label">Tempat / Tgl Lahir</label>
+                            <div class="col-sm-10">
+                                <input type="address" class="form-control" id="alamat" placeholder="Tempat / Tanggal Lahir">
+                            </div>
+                        </div>
+                        <!-- TANDA TANGAN -->
+                        <div class="mt-5">
+                            <h4>Tanda Tangan Syirkah</h4>
+                            <div class="row my-4">
+                                <label for="peran" class="col-sm-2 col-form-label">Kota Penandatanganan</label>
+                                <div class="col-sm-10">
+                                    <label class="visually-hidden" for="autoSizingSelect"></label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Pilih Kota</option>
+                                        <option value="1">Surabaya</option>
+                                        <option value="2">Malang</option>
+                                        <option value="3">Jakarta</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="tanggal" class="col-sm-2 col-form-label">Waktu Penandatanganan</label>
+                                <div class="col-sm-10 align-items-center d-flex">
+                                    <input type="date" class="form-control" id="tanggal">
+                                </div>
+                            </div>
+                            <!-- PASAL PASAL -->
+                            <div class="pasal1 my-5">
+                                <h2 class="text-center">Pasal 1</h2>
+                                <h3 class="text-center">Jenis Pekarjaan (Nau'ul A'mal)</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Objek Pekerjaan dalam perjanjian ini adalah pengerjaan proyek aplikasi catfish
+                                            autodetail app.
+                                        </li>
+                                        <li>
+                                            Pihak Pertama menerima Pihak Kedua sebagai Tenaga kerja proyek dan Pihak Kedua
+                                            menyatakan kesediaannya untuk mengerjakan proyek yang diberikan oleh Pihak
+                                            Pertama di Syabab Studio.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal2 my-5">
+                                <h2 class="text-center">Pasal 2</h2>
+                                <h3 class="text-center">Jangka Waktu Kerja (Muddatul 'Amal)</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Pihak Pertama bersedia menerima Pihak Kedua untuk Kerja di Syabab Studio untuk
+                                            jangka waktu selama 1 (satu) bulan terhitung sejak tanggal 01 – 01 – 2023 sampai
+                                            tanggal 30 – 01 - 2023
+                                        </li>
+                                        <li>
+                                            Kerja dilaksanakan setiap hari, yaitu hari Senin sampai dengan Ahad. Jam kerja
+                                            dilaksanakan selama 6 jam setiap harinya. Pagi 08.00 - 14.00 WIB atau Sore 15.00
+                                            - 21.00 WIB
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal3 my-5">
+                                <h2 class="text-center">Pasal 3</h2>
+                                <h3 class="text-center">Tenaga Yang dicurahkan (Juhdul 'Amal)</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Pihak Kedua bersedia menjadi Fullstack Web Developer.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal4 my-5">
+                                <h2 class="text-center">Pasal 4</h2>
+                                <h3 class="text-center">Hak dan Kewajiban Kedua Belah Pihak</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Pihak Pertama mempunyai hak-hak sebagai berikut :
+                                            <ol style="list-style: lower-alpha;">
+                                                <li>Memiliki hasil pekerjaan proyek yang sedang dikerjakan.
+                                                </li>
+                                                <li> Menegur dan memberhentikan Pihak Kedua jika melakukan pelanggaran
+                                                    sesuai dengan ketentuan yang tercantum didalam pelanggaran Tata Tertib
+                                                    Kerja.</li>
+                                            </ol>
+                                        </li><br>
+                                        <li>
+                                            Pihak Pertama mempunyai Kewajiban-Kewajiban sebagai berikut :
+                                            <ol style="list-style: lower-alpha;">
+                                                <li>
+                                                    Memberikan hak-hak Pihak Kedua sesuai dengan pasal 5
+                                                </li>
+                                                <li>
+                                                    Melaksanakan kerja untuk Pihak Kedua hingga selesai.
+                                                </li>
+                                                <li>
+                                                    Memberikan pembinaan dan pengarahan kepada Pihak Kedua.
+                                                </li>
+                                                <li>
+                                                    Melakukan evaluasi secara berkala tentang perkembangan Pihak Kedua dalam
+                                                    hal pelaksanaan kerja.
+                                                </li>
+                                            </ol>
+                                        </li><br>
+                                        <li>
+                                            Pihak Kedua mempunyai kewajiban sebagai berikut :
+                                            <ol style="list-style: lower-alpha;">
+                                                <li>
+                                                    Melaksanakan kerja hingga masa kerja selesai.
+                                                </li>
+                                                <li>
+                                                    Mematuhi seluruh ketentuan yang diatur dalam Pelanggaran Tata Tertib
+                                                    Kerja.
+                                                </li>
+                                                <li>
+                                                    Mentaati segala instruksi dari pimpinan dan pembuat kerja.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal5 my-5">
+                                <h2 class="text-center">Pasal 5</h2>
+                                <h3 class="text-center">Upah Kerja (Ujratul 'Amal)</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Pihak Kedua mendapatkan upah selama masa kerja sebesar Rp. 1.500.000,00 (Satu
+                                            juta lima ratus ribu rupiah).
+                                        </li>
+                                        <li>
+                                            Pihak Kedua mendapatkan tambahan upah sebesar Rp. 500.000,00 (Lima ratus ribu
+                                            rupiah) jika bisa menyelesaikan pekerjaan sebelum tanggal 15 Januari 2023.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal6 my-5">
+                                <h2 class="text-center">Pasal 6</h2>
+                                <h3 class="text-center">Penyelesaian Perselisihan</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <li>
+                                            Bilamana terjadi perselisihan antara kedua belah pihak maka akan diselesaikan
+                                            secara musyawarah untuk mufakat, dan bilamana tidak tercapai kata mufakat maka
+                                            dilanjutkan sesuai ketentuan Perselisihan Perburuhan.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal7 my-5">
+                                <h2 class="text-center">Pasal 7</h2>
+                                <h3 class="text-center">Berakhirnya Perjanjian</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <!-- 1 -->
+                                        <li>
+                                            Bilamana Pihak Kedua melanggar ketentuan yang berlaku di perusahaan Pihak
+                                            Pertama, maka Pihak Pertama setiap saat dapat mengakhiri perjanjian kontrak
+                                            kerja tanpa berkewajiban memberikan ganti rugi dalam bentuk apapun.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="pasal8 my-5">
+                                <h2 class="text-center">Pasal 8</h2>
+                                <h3 class="text-center">Penutup</h3>
+                                <div class="border border-2 rounded-3 border-dark-subtle mt-4 p-4 pb-5">
+                                    <ol class="pb-5 mb-5">
+                                        <!-- 1 -->
+                                        <li>
+                                            Perjanjian kerja ini dibuat dan ditandatangani oleh Para Pihak dalam keadaan
+                                            sadar tanpa paksaan dari siapapun juga, serta berlaku sejak tanggal
+                                            ditandatangani , dan berakhir setelah selesainya program kerja.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                            <button class="btn m-auto login-button d-flex my-5 px-5 gap-2 py-2" type="submit"
+                                style="background-color: var(--basic);color: var(--gray);">
+                                Selanjutnya
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     <!-- SCRIPT JS -->
     <script src="../src/js/script.js" type="module"></script>
